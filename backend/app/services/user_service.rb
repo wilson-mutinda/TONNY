@@ -1,0 +1,258 @@
+class UserService
+
+  include RegexHelper
+  include SearchHelper
+
+  def initialize(params = {})
+    @params = params || {}
+    @users = User.all.order(:id).to_a
+    @target_param = params[:slug]
+  end
+
+  # create_user
+  def create_user
+    # email_param
+    email_param = normalize_email
+    if email_param.is_a?(Hash) && email_param.key?(:errors)
+      return email_param
+    end
+
+    # phone_param
+    phone_param = normalize_phone
+    if phone_param.is_a?(Hash) && phone_param.key?(:errors)
+      return phone_param
+    end
+
+    # password_param and password_confirmation_param
+    password_param = normalize_password_param_and_password_confirmation_param
+    if password_param.is_a?(Hash) && password_param.key?(:errors)
+      return password_param
+    end
+
+    # create_user
+    created_user = User.create(
+      email: email_param,
+      phone: phone_param,
+      password: password_param[:password],
+      password_confirmation: password_param[:password_confirmation],
+      flag: 'Admin'
+    )
+
+    if created_user
+      { success: true, message: "User created successfully!", info: created_user}
+    else
+      { success: false, errors: created_user.errors.full_messages }
+    end
+  end
+
+  # view single_user
+  def single_user
+    @user = slug_user_search(@users, @target_param)
+    if @user.is_a?(Hash) && @user.key?(:errors)
+      { success: false, errors: @user }
+    else
+      { success: true, info: @user }
+    end
+  end
+
+  # view all_users
+  def all_users
+    users = User.all.order(:email).to_a
+    if users.empty?
+      { success: false, errors: "Empty List!" }
+    else
+      { success: true, info: users }
+    end
+  end
+
+  # update_user
+  def update_user
+    @user = slug_user_search(@users, @target_param)
+
+    if @user.is_a?(Hash) && @user.key?(:errors)
+      return @user
+    end
+
+    updated_user_params = {}
+
+    # email_param
+    if @params.key?(:email)
+      email_param = normalize_update_email
+      if email_param.is_a?(Hash) && email_param.key?(:errors)
+        return email_param
+      end
+
+      updated_user_params[:email] = email_param
+    end
+
+    # phone_param
+    if @params.key?(:phone)
+      phone_param = normalize_update_phone
+      if phone_param.is_a?(Hash) && phone_param.key?(:errors)
+        return phone_param
+      end
+
+      updated_user_params[:phone] = phone_param
+    end
+
+    # password_param
+    if @params.key?(:password) || @params.key?(:password_confirmation)
+      password_param = normalize_update_password_param
+      if password_param.is_a?(Hash) && password_param.key?(:errors)
+        return password_param
+      end
+
+      updated_user_params[:password] = password_param[:password]
+      updated_user_params[:password_confirmation] = password_param[:password_confirmation]
+    end
+
+    # update_user
+    updated_user = @user.update(updated_user_params)
+    if updated_user
+      { success: true, message: "User updated successfully!", info: @user }
+    else
+      { success: false, errors: @user.errors.full_messages }
+    end
+  end
+
+  # delete_user
+  def delete_user
+    @user = slug_user_search(@users, @target_param)
+
+    if @user.is_a?(Hash) && @user.key?(:errors)
+      return @user
+    end
+
+    # delete_record
+    deleted_record = @user.delete
+    if deleted_record
+      { success: true, info: "User soft deleted successfully!"}
+    else
+      { success: false, errors: @user.errors.full_messages }
+    end
+  end
+
+  # restore_user
+  def restore_user
+    user = User.unscoped.find_by(slug: @target_param)
+
+    if user.nil?
+      return { success: false, errors: "User not found!"}
+    end
+
+    if user.user_deleted?
+      user.restore_user
+      { success: true, message: "User restored successfully!"}
+    else
+      { success: false, errors: "USer was not deleted!"}
+    end
+  end
+
+  private
+
+  # normalize_update_email
+  def normalize_update_email
+    email_param = @params[:email].to_s.gsub(/\s+/, '').downcase
+    if email_param.present?
+      # email_regex
+      email_regex = email_format(email_param)
+      if email_regex.is_a?(Hash) && email_regex.key?(:errors)
+        return email_regex
+      end
+
+      # email should not exist
+      existing = search_user_email_with_user_id(@users, email_regex, @user.id)
+      if existing.is_a?(Hash) && existing.key?(:errors)
+        return existing
+      end
+
+      email_regex
+    end
+  end
+
+  # normalize_update_phone
+  def normalize_update_phone
+    phone_param = @params[:phone].to_s.gsub(/\s+/, '')
+    if phone_param.present?
+      # phone_regex
+      phone_regex = phone_format(phone_param)
+      if phone_regex.is_a?(Hash) && phone_regex.key?(:errors)
+        return phone_regex
+      end
+
+      # phone should not exist
+      existing = search_user_phone_with_user_id(@users, phone_regex, @user.id)
+      if existing.is_a?(Hash) && existing.key?(:errors)
+        return existing
+      end
+      phone_regex
+    end
+  end
+
+  # normalize_update_password_param
+  def normalize_update_password_param
+    password_param = @params[:password]
+    password_confirmation_param = @params[:password_confirmation]
+
+    password_regex = password_format(password_param, password_confirmation_param)
+    if password_regex.is_a?(Hash) && password_regex.key?(:errors)
+      return password_regex
+    end
+
+    password_regex
+  end
+
+  # normalize_email
+  def normalize_email
+    email_param = @params[:email].to_s.gsub(/\s+/, '').downcase
+    if email_param.blank?
+      return { errors: { email: "Email cannot be blank!"}}
+    end
+
+    # check on email_regex
+    email_regex = email_format(email_param)
+    if email_regex.is_a?(Hash) && email_regex.key?(:errors)
+      return email_regex
+    end
+
+    # email should not exist
+    existing = search_user_email(@users, email_regex)
+    if existing.is_a?(Hash) && existing.key?(:errors)
+      return existing
+    end
+    email_regex
+  end
+
+  # normalize_phone
+  def normalize_phone
+    phone_param = @params[:phone].to_s.gsub(/\s+/, '')
+    if phone_param.blank?
+      return { errors: { phone: "Phone cannot be blank!"}}
+    end
+
+    # check on phone_regex
+    phone_regex = phone_format(phone_param)
+    if phone_regex.is_a?(Hash) && phone_regex.key?(:errors)
+      return phone_regex
+    end
+
+    # phone should not exist
+    existing = search_user_phone(@users, phone_regex)
+    if existing.is_a?(Hash) && existing.key?(:errors)
+      return existing
+    end
+    phone_regex
+  end
+
+  # normalize_password_param_and_password_confirmation_param
+  def normalize_password_param_and_password_confirmation_param
+    password_param = @params[:password]
+    password_confirmation_param = @params[:password_confirmation]
+
+    password_regex = password_format(password_param, password_confirmation_param)
+    if password_regex.is_a?(Hash) && password_regex.key?(:errors)
+      return password_regex
+    end
+    password_regex
+  end
+end
