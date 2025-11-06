@@ -73,4 +73,23 @@ RSpec.describe SearchHelper, type: :helper do
       expect(result).to eq(users[4])
     end
   end
+
+  describe "#login_email_search" do
+    let(:users) do
+      [
+        double(id: 1, email: "aa@gmail.com"),
+        double(id: 2, email: "bb@gmail.com"),
+        double(id: 3, email: "cc@gmail.com"),
+      ]
+    end
+
+    it "returns an email if its found in array" do
+      result = helper.login_email_search(users, 'aa@gmail.com')
+      expect(result).to eq('aa@gmail.com')
+    end
+    it "returns an error if email is not found" do
+      result = helper.login_email_search(users, 'dd@gmail.com')
+      expect(result).to eq({ errors: { email: "Email does not exist!"}})
+    end
+  end
 end

@@ -168,4 +168,24 @@ module SearchHelper
     end
   end
 
+  def login_email_search(users, target_email)
+    target_email = target_email.to_s.gsub(/\s+/, '').downcase
+    first_index = 0;
+    last_index = users.length - 1;
+
+    while first_index <= last_index
+      mid_index = (first_index + last_index) / 2;
+      mid_user = users[mid_index]
+
+      if mid_user.email == target_email
+        return mid_user.email
+      elsif mid_user.email < target_email
+        first_index = mid_index + 1;
+      else
+        last_index = mid_index - 1;
+      end
+    end
+    { errors: { email: "Email does not exist!"}}
+  end
+
 end

@@ -100,6 +100,22 @@ class Api::V1::UsersController < ApplicationController
     
   end
 
+  # user_login
+  def user_login
+    begin
+      service = UserService.new(user_params)
+      result = service.user_login
+      if result[:success]
+        render json: { info: result[:message]}, status: :ok
+      else
+        render json: { errors: result[:errors]}, status: :unprocessable_entity
+      end
+    rescue => e
+      render json: { errors: "Something went wrong!", message: e.message }, status: :internal_server_error
+    end
+    
+  end
+
   # privately hold user_params
   private
   def user_params

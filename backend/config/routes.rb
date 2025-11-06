@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       patch 'update_user/:slug', to: 'users#update_user'
       delete 'delete_user/:slug', to: 'users#delete_user'
       get 'restore_user/:slug', to: 'users#restore_user'
+
+      post 'user_login', to: 'users#user_login'
     end
   end
 end
