@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'restore_user/:slug', to: 'users#restore_user'
 
       post 'user_login', to: 'users#user_login'
+      get 'refresh_token', to: 'users#refresh_token'
     end
   end
 end

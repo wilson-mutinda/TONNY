@@ -3,6 +3,8 @@ class UserService
   include RegexHelper
   include SearchHelper
 
+  require_relative './json_web_token'
+
   def initialize(params = {})
     @params = params || {}
     @users = User.all.order(:id).to_a
@@ -163,7 +165,10 @@ class UserService
     if user
       auth = user.authenticate(password_param)
       if auth
-        { success: true, message: "Login successful!"}
+        result = JSON_WEB_TOKEN.new
+        access_token = result.encode_token(user.id, user.flag, 30.minutes.from_now)
+        refresh_token = result.encode_token(user.id, user.flag, 24.hours.from_now)
+        { success: true, message: "Login successful!", user: user, access_token: access_token, refresh_token: refresh_token }
       else
         { success: false, errors: { password: "Invalid password!"}}
       end

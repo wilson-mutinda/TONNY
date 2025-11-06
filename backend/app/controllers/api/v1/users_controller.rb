@@ -106,10 +106,37 @@ class Api::V1::UsersController < ApplicationController
       service = UserService.new(user_params)
       result = service.user_login
       if result[:success]
-        render json: { info: result[:message]}, status: :ok
+        user_info = result[:user]
+        user = user_info.as_json(except: [:created_at, :updated_at, :password_digest, :deleted_at])
+        render json: { info: {
+          message: result[:message],
+          user: user,
+          access_token: result[:access_token],
+          refresh_token: result[:refresh_token]
+        }}, status: :ok
       else
         render json: { errors: result[:errors]}, status: :unprocessable_entity
       end
+    rescue => e
+      render json: { errors: "Something went wrong!", message: e.message }, status: :internal_server_error
+    end
+    
+  end
+
+  # refresh_token
+  def refresh_token
+    begin
+      refresh_body = request.headers['Authorization']
+      if refresh_body.blank?
+        render json: { errors: { refresh_token: "Please provide refresh_token!"}}, status: :unprocessable_entity
+        return
+      end
+
+      refresh_token = refresh_body.split(' ').last
+      decoded = JSON_WEB_TOKEN.new.decode_token(refresh_token)
+
+      new_access_token = JSON_WEB_TOKEN.new.encode_token(decoded[:user_id], decoded[:flag], 30.minutes.from_now)
+      render json: { new_access_token: new_access_token }, status: :ok
     rescue => e
       render json: { errors: "Something went wrong!", message: e.message }, status: :internal_server_error
     end
