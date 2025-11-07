@@ -262,4 +262,34 @@ module SearchHelper
     target_category
   end
 
+  def search_post_by_slug(posts, post_slug)
+    post_slug = post_slug.to_s.downcase
+
+    # check if slug is an id
+    if post_slug.match?(/\d/) && post_slug.length <= 4
+      post_slug = post_slug.to_i
+
+      id_array = posts.sort_by(&:id)  # <— ensure sorted order
+      first_index = 0
+      last_index = id_array.length - 1
+
+      while first_index <= last_index
+        mid_index = (first_index + last_index) / 2
+        mid_post = id_array[mid_index]
+
+        if mid_post.id == post_slug
+          return mid_post
+        elsif mid_post.id < post_slug
+          first_index = mid_index + 1
+        else
+          last_index = mid_index - 1
+        end
+      end
+      return { errors: { post: "Post not found for ID #{post_slug}"}}
+    end
+
+    post = posts.find { |post| (post.slug.downcase == post_slug || post.description.downcase == post_slug) }
+    post || { errors: { post: "Post not found for slug #{post_slug}"}}
+  end
+
 end

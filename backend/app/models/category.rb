@@ -1,5 +1,7 @@
 class Category < ApplicationRecord
 
+  has_many :posts
+
   default_scope { where(deleted_at: nil)}
 
   def soft_delete_name
