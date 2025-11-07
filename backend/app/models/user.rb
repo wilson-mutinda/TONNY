@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  default_scope { where(deleted_at: nil)}
+
   # delete
   def delete
     update(deleted_at: Time.current)

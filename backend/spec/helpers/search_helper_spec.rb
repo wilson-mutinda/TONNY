@@ -92,4 +92,40 @@ RSpec.describe SearchHelper, type: :helper do
       expect(result).to eq({ errors: { email: "Email does not exist!"}})
     end
   end
+
+  describe "#search_category_name" do
+    let(:categories) do
+      [
+        double(id: 1, category_name: "aa"),
+        double(id: 2, category_name: "bb"),
+        double(id: 3, category_name: "cc"),
+      ]
+    end
+
+    it "returns an error if name already exists!" do
+      result = helper.search_category_name(categories, 'aa')
+      expect(result).to eq({ errors: { category_name: "Category already exists!"}})
+    end
+  end
+
+  describe "#unique_category_name" do
+    let(:categories) do
+      [
+        double(id: 1, category_name: 'aa'),
+        double(id: 2, category_name: 'bb'),
+        double(id: 3, category_name: 'cc'),
+        double(id: 4, category_name: 'dd'),
+      ]
+    end
+
+    it "returns an error if name already exists!" do
+      result = helper.unique_category_name(categories, 'aa', 3)
+      expect(result).to eq({ errors: { category: "Category name exists!"}})
+    end
+
+    it "returns the name if it does not exist" do
+      result = helper.unique_category_name(categories, 'aa', 1)
+      expect(result).to eq('aa')
+    end
+  end
 end

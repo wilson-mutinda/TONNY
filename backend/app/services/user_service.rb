@@ -146,7 +146,7 @@ class UserService
       user.restore_user
       { success: true, message: "User restored successfully!"}
     else
-      { success: false, errors: "USer was not deleted!"}
+      { success: false, errors: "User was not deleted!"}
     end
   end
 

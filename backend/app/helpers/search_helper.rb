@@ -188,4 +188,78 @@ module SearchHelper
     { errors: { email: "Email does not exist!"}}
   end
 
+  def search_category_name(categories, target_category)
+    target_category = target_category.to_s.downcase
+
+    first_index = 0;
+    last_index = categories.length - 1;
+
+    while first_index <= last_index
+      mid_index = (first_index + last_index) / 2;
+      mid_category = categories[mid_index]
+
+      if mid_category.category_name == target_category
+        return { errors: { category_name: "Category already exists!"}}
+      elsif mid_category.category_name < target_category
+        first_index = mid_index + 1;
+      else
+        last_index = mid_index - 1;
+      end
+    end
+    target_category
+  end
+
+  def search_category_by_slug(categories, category_slug)
+    category_slug = category_slug.to_s.downcase
+    # check if slug is an id
+    if category_slug.match?(/\d/) && category_slug.length <= 4
+      category_slug = category_slug.to_i
+      id_array = categories
+
+      first_index = 0;
+      last_index = id_array.length - 1;
+
+      while first_index <= last_index
+        mid_index = (first_index + last_index) / 2;
+        mid_category = categories[mid_index]
+
+        if mid_category.id == category_slug
+          return mid_category
+        elsif mid_category.id < category_slug
+          first_index = mid_index + 1;
+        else
+          last_index = mid_index - 1;
+        end
+      end
+      return { errors: { category: "Category Id not found for #{category_slug}"}}
+    end
+
+    # otherwise find slug (if slug is not numeric)
+    found_category = categories.find { |category| (category.slug.downcase == category_slug || category.category_name.downcase == category_slug)}
+    return found_category || { errors: { category: "Category not found for slug #{category_slug}"}}
+  end
+
+  def unique_category_name(categories, target_category, current_id)
+    target_category = target_category.to_s.downcase
+    first_index = 0;
+    last_index = categories.length - 1;
+
+    while first_index <= last_index
+      mid_index = (first_index + last_index) / 2;
+      mid_category = categories[mid_index]
+
+      if mid_category.category_name == target_category
+        if mid_category.id != current_id
+          return { errors: { category: "Category name exists!"}}
+        end
+        return mid_category.category_name
+      elsif mid_category.category_name < target_category
+        first_index = mid_index + 1;
+      else
+        last_index = mid_index - 1;
+      end
+    end
+    target_category
+  end
+
 end

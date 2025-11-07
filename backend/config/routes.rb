@@ -10,6 +10,14 @@ Rails.application.routes.draw do
 
       post 'user_login', to: 'users#user_login'
       get 'refresh_token', to: 'users#refresh_token'
+
+      # categories
+      post 'create_category', to: 'categories#create_category'
+      get 'single_category/:slug', to: 'categories#single_category'
+      get 'all_categories', to: 'categories#all_categories'
+      patch 'update_category/:slug', to: 'categories#update_category'
+      delete 'delete_category/:slug', to: 'categories#delete_category'
+      get 'restore_category/:slug', to: 'categories#restore_category'
     end
   end
 end
