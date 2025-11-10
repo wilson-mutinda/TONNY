@@ -153,4 +153,34 @@ RSpec.describe SearchHelper, type: :helper do
       expect(result).to eq({ errors: { post: "Post not found for slug dd"}})
     end
   end
+
+  describe "#search_contact_by_slug" do
+    let(:contacts) do
+      [
+        double(id: 1, slug: 'aa'),
+        double(id: 2, slug: 'bb'),
+        double(id: 3, slug: 'cc')
+      ]
+    end
+
+    it "returns an error if id was not found" do
+      result = helper.search_contact_by_slug(contacts, 4)
+      expect(result).to eq({ errors: { contact: "Contact not found for ID 4"}})
+    end
+
+    it "returns an object if id was found" do
+      result = helper.search_contact_by_slug(contacts, 3)
+      expect(result).to eq(contacts[2])
+    end
+
+    it "returns an error if slug was not found" do
+      result = helper.search_contact_by_slug(contacts, 'Cd')
+      expect(result).to eq({ errors: { contact: "Contact not found for slug 'cd'"}})
+    end
+
+    it "returns an object if slug exists" do
+      result = helper.search_contact_by_slug(contacts, 'cc')
+      expect(result).to eq(contacts[2])
+    end
+  end
 end

@@ -292,4 +292,34 @@ module SearchHelper
     post || { errors: { post: "Post not found for slug #{post_slug}"}}
   end
 
+  def search_contact_by_slug(contacts, slug)
+    slug = slug.to_s.downcase
+
+    # check if slug was an ID
+    if slug.match?(/\d/) && slug.length <= 4
+      slug = slug.to_i
+
+      first_index = 0;
+      last_index = contacts.length - 1;
+
+      while first_index <= last_index
+        mid_index = (first_index + last_index) / 2;
+        mid_contact = contacts[mid_index]
+
+        if mid_contact.id == slug
+          return mid_contact
+        elsif mid_contact.id < slug
+          first_index = mid_index + 1;
+        else
+          last_index = mid_index - 1;
+        end
+      end
+      return { errors: { contact: "Contact not found for ID #{slug}"}}
+    end
+
+    # otherwise find by slug
+    contact = contacts.find { |c| c.slug.downcase == slug }
+    return contact || { errors: { contact: "Contact not found for slug '#{slug}'"}}
+  end
+
 end
