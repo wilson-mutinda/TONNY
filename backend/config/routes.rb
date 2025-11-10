@@ -26,6 +26,9 @@ Rails.application.routes.draw do
       patch 'update_post/:slug', to: 'posts#update_post'
       delete 'delete_post/:slug', to: 'posts#delete_post'
       get 'restore_post/:slug', to: 'posts#restore_post'
+
+      # contacts
+      post 'create_contact', to: 'contacts#create_contact'
     end
   end
 end
