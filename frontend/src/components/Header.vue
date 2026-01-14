@@ -1,44 +1,47 @@
 <template>
     <div class="">
         <!-- header section -->
-         <section class="py-4 bg-tm-red mb-4 fixed top-0 left-0 w-full z-50">
-            <!-- logo and menu -->
-             <div class="container px-2 mx-auto flex justify-between items-center">
-                <!-- logo -->
-                 <div class="flex items-center gap-2">
-                    <RouterLink to="/" class="flex items-center gap-2">
-                        <img src="/TM LOGO3.png" alt="logo" width="50">
-                        <div class="">
-                            <p class="text-tm-gray font-semibold text-xl">TMGRAFIXLAB</p>
-                        </div>
-                    </RouterLink>
-                 </div>
+         <section class="py-4 bg-tm-red fixed top-0 left-0 w-full z-50 overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
 
-                 <!-- desktop menu -->
-                  <div class="md:flex gap-4 hidden">
-                    <a class="text-white font-bold" href="/">Home</a>
-                    <a class="text-white font-bold" href="/about">About</a>
-                    <a class="text-white font-bold" href="/portfolio">Portfolio</a>
-                    <a class="text-white font-bold" href="/blog">Blog</a>
-                    <a class="text-white font-bold" href="/contact-us">Contact</a>
-                  </div>
+    <!-- Logo -->
+    <RouterLink to="/" class="flex items-center gap-2">
+      <img src="/TM LOGO3.png" alt="logo" class="w-10 sm:w-12">
+      <p class="text-tm-gray font-semibold text-lg sm:text-xl whitespace-nowrap">
+        TMGRAFIXLAB
+      </p>
+    </RouterLink>
 
-                  <!-- mobile menu -->
-                   <div class="md:hidden">
-                    <button @click="isMenuOpen = !isMenuOpen">
-                        <img src="/dial-pad.png" alt="menu" width="30">
-                    </button>
-                   </div>
-             </div>
-             <!-- md-menu -->
-                    <div v-if="isMenuOpen" class="md:hidden flex flex-col bg-tm-red px-4 pb-4 pt-4 gap-2">
-                        <a class="text-white font-bold" href="/">Home</a>
-                        <a class="text-white font-bold" href="/about">About</a>
-                        <a class="text-white font-bold" href="/portfolio">Portfolio</a>
-                        <a class="text-white font-bold" href="/blog">Blog</a>
-                        <a class="text-white font-bold" href="/contact-us">Contact</a>
-                    </div>
-         </section>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-4">
+      <RouterLink class="text-white font-bold" to="/">Home</RouterLink>
+      <RouterLink class="text-white font-bold" to="/about">About</RouterLink>
+      <RouterLink class="text-white font-bold" to="/portfolio">Portfolio</RouterLink>
+      <RouterLink class="text-white font-bold" to="/blog">Blog</RouterLink>
+      <RouterLink class="text-white font-bold" to="/contact-us">Contact</RouterLink>
+    </div>
+
+    <!-- Mobile Button -->
+    <div class="md:hidden flex-shrink-0">
+      <button @click="isMenuOpen = !isMenuOpen">
+        <img src="/dial-pad.png" alt="menu" class="w-7">
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    v-if="isMenuOpen"
+    class="md:hidden flex flex-col bg-tm-red px-4 pb-4 gap-2"
+  >
+    <RouterLink to="/" @click="isMenuOpen=false" class="text-white font-bold">Home</RouterLink>
+    <RouterLink to="/about" @click="isMenuOpen=false" class="text-white font-bold">About</RouterLink>
+    <RouterLink to="/portfolio" @click="isMenuOpen=false" class="text-white font-bold">Portfolio</RouterLink>
+    <RouterLink to="/blog" @click="isMenuOpen=false" class="text-white font-bold">Blog</RouterLink>
+    <RouterLink to="/contact-us" @click="isMenuOpen=false" class="text-white font-bold">Contact</RouterLink>
+  </div>
+</section>
+
     </div>
 </template>
 
