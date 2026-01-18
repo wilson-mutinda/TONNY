@@ -12,7 +12,7 @@
                      <!-- quick links -->
                       <div class="">
                         <!-- title -->
-                         <h4 class="text-black font-bold mb-4">Quick Links</h4>
+                         <h4 class="text-white font-bold mb-4">Quick Links</h4>
 
                          <!-- qlinks -->
                           <div class="flex flex-col gap-2">

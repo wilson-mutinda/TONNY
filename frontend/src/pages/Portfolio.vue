@@ -7,7 +7,7 @@
           <Marquee />
 
           <!-- Portfolio Menu -->
-            <div class="fixed top-32 left-0 w-full z-40 bg-white shadow-sm">
+            <div class="fixed top-24 left-0 w-full z-40 bg-white shadow-sm">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between py-4">
 
@@ -69,7 +69,7 @@
             <div class="bg-tm-red h-px pt-1"></div>
 
            <!-- social media posts -->
-            <section id="social-media" class="py-4 mt-4">
+            <section id="social-media" class="py-4 mt-4 pt-32">
                 <div class="container mx-auto px-4">
                     <div class="">
                         <!-- section header -->
@@ -90,9 +90,12 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in socialMediaPosts" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                <span class="text-white font-semibold">{{ img.description }}</span>
+                            <div v-for="(img, index) in socialMediaPosts" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <img
+                                 :src="img.img" 
+                                 :alt="img.description" 
+                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                <span class="text-gray-700 hover:text-tm-red font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
                     </div>
@@ -103,7 +106,7 @@
              <Separator />
 
             <!-- travel flyers -->
-             <section id="travel-flyers" class="py-4 mt-4">
+             <section id="travel-flyers" class="py-4 mt-4 pt-32">
                 <div class="container mx-auto px-4">
                     <div class="">
                         <!-- section header -->
@@ -123,9 +126,12 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in travelFlyers" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                <span class="text-white font-semibold">{{ img.description }}</span>
+                            <div v-for="(img, index) in travelFlyers" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <img 
+                                :src="img.img" 
+                                :alt="img.description" 
+                                class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
                     </div>
@@ -136,7 +142,7 @@
              <Separator />
 
              <!-- political posters -->
-              <section id="political-posters" class="py-4 mt-4">
+              <section id="political-posters" class="py-4 mt-4 pt-32">
                 <div class="container mx-auto px-4">
                     <div class="">
                         <!-- section header -->
@@ -156,9 +162,12 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in politicalPosters" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                <span class="text-white font-semibold">{{ img.description }}</span>
+                            <div v-for="(img, index) in politicalPosters" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <img
+                                 :src="img.img" 
+                                 :alt="img.description" 
+                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
                     </div>
@@ -169,7 +178,7 @@
             <Separator />
 
               <!-- general flyers -->
-               <section id="general-flyers" class="py-4 mt-4">
+               <section id="general-flyers" class="py-4 mt-4 pt-32">
                 <div class="container mx-auto px-4">
                     <div class="">
                         <!-- section header -->
@@ -189,9 +198,12 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in generalFlyers" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                <span class="text-white font-semibold">{{ img.description }}</span>
+                            <div v-for="(img, index) in generalFlyers" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <img
+                                 :src="img.img" 
+                                 :alt="img.description" 
+                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
                     </div>
@@ -202,7 +214,7 @@
              <Separator />
 
                <!-- mockups -->
-                <section id="mockups" class="py-4 mt-4">
+                <section id="mockups" class="py-4 mt-4 pt-32">
                 <div class="container mx-auto px-4">
                     <div class="">
                         <!-- section header -->
@@ -222,9 +234,12 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in mockups" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                <span class="text-white font-semibold">{{ img.description }}</span>
+                            <div v-for="(img, index) in mockups" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <img
+                                 :src="img.img" 
+                                 :alt="img.description" 
+                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
                     </div>
@@ -235,7 +250,7 @@
              <Separator />
 
                 <!-- logos -->
-                 <section id="logos" class="py-4 mt-4">
+                 <section id="logos" class="py-4 mt-4 pt-32">
                     <div class="container mx-auto px-4">
                         <div class="">
                             <!-- section header -->
@@ -255,9 +270,12 @@
                             <!-- Images Grid -->
 
                             <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                                <div v-for="(img, index) in logos" class="bg-black/50 p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
-                                    <img :src="img.img" :alt="img.description" class="w-full h-96 rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
-                                    <span class="text-white font-semibold">{{ img.description }}</span>
+                                <div v-for="(img, index) in logos" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                    <img
+                                     :src="img.img" 
+                                     :alt="img.description" 
+                                     class="w-full max-w-[160px] aspect-square object-contain rounded-md transition-transform duration-300 group-hover:scale-110">
+                                    <span class="text-gray-700 hover:text-tm-red font-semibold">{{ img.description }}</span>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +286,7 @@
              <Separator />
 
                  <!-- desclaimer -->
-                  <section class="py-12 mt-4">
+                  <section class="py-12 mt-4 pt-32">
                     <div class="container mx-auto px-4">
                         <div class="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
                             <h3 class="font-semibold text-2xl text-gray-800 mb-4">Disclaimer</h3>

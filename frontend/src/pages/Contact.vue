@@ -4,8 +4,11 @@
         <!-- Header -->
          <Header />
 
+         <!-- Marquee -->
+          <Marquee />
+
          <!-- intro -->
-          <section class="py-8 mt-16">
+          <section class="py-8 mt-16 pt-12">
             <div class="container mx-auto px-4">
 
                 <!-- title -->
@@ -222,12 +225,14 @@
 <script>
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
+import Marquee from '@/components/Marquee.vue';
 
     export default {
 
         components: {
             Header, 
-            Footer
+            Footer,
+            Marquee
         },
 
         data() {

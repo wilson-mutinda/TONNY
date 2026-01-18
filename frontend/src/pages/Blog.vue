@@ -3,8 +3,11 @@
         <!-- Header -->
         <Header />
 
+        <!-- Marquee -->
+         <Marquee />
+
         <!-- Blog Hero Section -->
-        <section class="pt-24 pb-12 bg-white">
+        <section class="pt-32 pb-12 bg-white">
             <div class="container px-4 mx-auto">
                 <div class="text-center max-w-3xl mx-auto">
                     <h1 class="text-4xl md:text-5xl font-bold text-tm-red mb-4">
@@ -216,11 +219,13 @@
 <script>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import Marquee from '@/components/Marquee.vue';
 
 export default {
     components: {
         Header,
-        Footer
+        Footer,
+        Marquee
     },
     
     data() {

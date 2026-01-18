@@ -45,7 +45,7 @@
                       <!-- button -->
                        <div class="text-center mt-3">
                         <!-- button -->
-                        <button @click="openAboutPage" class="bg-tm-red p-2 rounded-md text-white font-medium">
+                        <button @click="openAboutPage" class="bg-tm-red p-2 rounded-full text-white font-medium">
                             Discover Full Story
                             <!-- <img src="/right-up.png" alt="up" width="20"> -->
                         </button>

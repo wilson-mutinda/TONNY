@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <!-- Hero section -->
-            <section class="py-4 mb-4">
+            <section class="mb-4 py-20 pt-24">
             <div class="px-4 mx-auto">
                 <div class="relative w-full h-[650px] overflow-hidden rounded-lg">
 
@@ -28,10 +28,10 @@
 
                  <!-- welcome content -->
                   <div class="absolute inset-0 flex items-center justify-center text-center px-4">
-                    <div class="max-w-xl bg-black rounded-md bg-opacity-50 p-4">
-                        <h3 class="text-white text-2xl font-semibold mb-3">Hi, Welcome to <span class="text-tm-red">TMGRAFIXLAB</span></h3>
+                    <div class="max-w-sm bg-black rounded-md bg-opacity-50 p-4">
+                        <h3 class="text-white text-xl font-semibold mb-3">Hi, Welcome to <span class="text-tm-red">TMGRAFIXLAB</span></h3>
 
-                        <p class="text-white mb-4">A passionate graphic design company creating logos, flyers, posters, and more.</p>
+                        <p class="text-white text-sm mb-4">A passionate graphic design company creating logos, flyers, posters, and more.</p>
 
                         <!-- <button type="button" class="bg-tm-red hover:bg-red-700 transition px-6 py-3 rounded-md text-white">
                             View My Work

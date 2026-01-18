@@ -1,11 +1,11 @@
 <template>
     <div class="">
-        <section class="w-full overflow-hidden bg-white border-y mt-20">
+        <section class="w-full overflow-hidden bg-white border-y top-20 left-0 fixed z-40">
         <div class="relative flex">
             <h4
             class="whitespace-nowrap text-sm text-tm-red animate-marquee"
             >
-            ✦ Catchy Designs for Memorable Spaces ✦
+            🎨✨ Catchy Designs for Memorable Spaces 🏡🖌️ 
             </h4>
         </div>
         </section>
