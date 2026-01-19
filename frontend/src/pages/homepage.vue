@@ -140,6 +140,70 @@
            <!-- Featured setion -->
             <Featured />
 
+            <!-- Trustees -->
+             <section class="py-8">
+              <div class="container mx-auto px-4 bg-white rounded-md p-4">
+                <!-- title -->
+                 <div class="text-center">
+                  <h3 class="text-2xl text-tm-red font-medium">Trusted by Visionary Brands</h3>
+                  <p class="text-sm text-gray-600 mt-2">From startups to established enterprises, we deliver designs that make an impact</p>
+                 </div>
+
+                 <!-- brand grids -->
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                    <!-- brand A -->
+                     <div class="bg-black/50 p-2 rounded-md">
+                      <h1>Brand A</h1>
+                     </div>
+
+                     <!-- brand B -->
+                      <div class="bg-black/50 p-2 rounded-md">
+                        <h1>Brand B</h1>
+                      </div>
+
+                      <!-- brand C -->
+                       <div class="bg-black/50 p-2 rounded-md">
+                        <h1 class="">Brand C</h1>
+                       </div>
+
+                       <!-- brand D -->
+                        <div class="bg-black/50 p-2 rounded-md">
+                          <h1>BRAND D</h1>
+                        </div>
+                  </div>
+
+                  <!-- brand testimonials -->
+                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+
+                    <!-- first testimonial -->
+                     <div class="bg-black/50 rounded-md p-4">
+                      <!-- description -->
+                       <h3 class="text-gray-800 italic mb-2">"TMGrafixLab has transformed our brand identity completely. Their attention to 
+                        detail and creative vision exceeded all expectations."
+                       </h3>
+
+                       <div class="">
+                        <h3 class="font-medium mb-2 text-white">Wilson Kilonzo</h3>
+                        <p class="font-medium text-white">CEO, Wilton Technologies LTD</p>
+                       </div>
+                     </div>
+
+                     <!-- second testimonial -->
+                      <div class="bg-black/50 rounded-md p-4">
+                        <!-- description -->
+                         <h3 class="text-white italic mb-2">"Working with TMGrafixLab was a game-changer. They understood our vision and 
+                          delivered designs that perfectly captured our brand essence."</h3>
+
+                          <div class="">
+                            <h3 class="font-medium text-gray-800 mb-2">Antony Muigai</h3>
+                            <p class="font-medium text-gray-800">Founder, TMGrafixLab</p>
+                          </div>
+                      </div>
+
+                   </div>
+              </div>
+             </section>
+
             <!-- Contact section -->
              <section></section>
 
