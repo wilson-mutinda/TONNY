@@ -8,6 +8,87 @@
          <!-- Hero section -->
           <HeroSection />
 
+          <!-- creative services -->
+           <section class="py-8">
+            <div class="container mx-auto px-4">
+              <!-- title -->
+               <div class="text-center">
+                <h3 class="text-tm-red font-medium text-3xl mb-3">My Creative Services</h3>
+                <p class="text-gray-600 text-sm">Comprehensive design solutions tailored to your brand's unique needs</p>
+               </div>
+
+               <!-- 3 divs -->
+                <div class="grid grid-cols-1 md:grid-cols-3 mt-5 gap-4">
+
+                  <!-- Brand identity -->
+                   <div class="bg-white rounded-md p-4 shadow-md">
+                    <img src="/diamond.png" alt="diamond" width="30" class="icon-red mb-2">
+                    <h3 class="font-semibold mb-2">Brand Identity</h3>
+                    <p class="text-gray-600 text-sm mb-2 max-w-sm">Complete brand systems including logos, style guides, and brand strategy</p>
+
+                    <div class="">
+                      <div class="flex gap-1 items-center">
+                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                        <span class="text-gray-600 text-sm">Logo Design</span>
+                      </div>
+                      <div class="flex gap-1 items-center">
+                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                        <span class="text-gray-600 text-sm">Brand Guidelines</span>
+                      </div>
+                      <div class="flex gap-1 items-center">
+                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                        <span class="text-gray-600 text-sm">Brand Strategy</span>
+                      </div>
+                    </div>
+                   </div>
+
+                   <!-- Digital design -->
+                    <div class="bg-white rounded-md p-4 shadow-md">
+                      <img src="/monitor.png" alt="monitor" width="30" class="icon-red mb-2">
+                      <h3 class="font-semibold mb-2">Digital Design</h3>
+                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Engaging digital experience for web and mobile platforms.</p>
+
+                      <div class="">
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">UI/UX Design</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Web Design</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Social Media Graphics</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Print and marketting -->
+                     <div class="bg-white rounded-md p-4 shadow-md">
+                      <img src="/printer.png" alt="printer" class="icon-red mb-2" width="30">
+                      <h3 class="font-semibold mb-2">Print & Marketing</h3>
+                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Physical and promotional materials that make lasting impressions</p>
+
+                      <div class="">
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Business Cards</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Bronchures & Flyers</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Packaging Design</span>
+                        </div>
+                      </div>
+                     </div>
+                </div>
+            </div>
+           </section>
+
            <!-- About Teaser Section -->
             <section class="py-12">
                 <div class="container mx-auto px-4 bg-gray-200 p-4 rounded-md shadow-md">
