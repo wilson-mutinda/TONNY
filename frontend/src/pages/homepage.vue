@@ -204,8 +204,207 @@
               </div>
              </section>
 
+             <!-- Design Process -->
+              <section class="py-8">
+                <div class="container mx-auto px-4 bg-white rounded-md p-4">
+                  <!-- title -->
+                   <div class="text-center">
+                    <h3 class="font-medium text-3xl text-tm-red mb-4">Design Process</h3>
+                    <p class="text-gray-700 text-sm mb-4">A structured yet flexible approach ensuring your project's success</p>
+                   </div>
+
+                   <!-- design grids -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+
+                      <!-- Discovery -->
+                       <div class="flex flex-col items-center text-center shadow-md p-4">
+                        <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
+                          <h3 class="">1</h3>
+                        </div>
+
+                        <div class="">
+                          <h4 class="font-semibold mb-2">Discovery</h4>
+                          <p class="text-gray-700 text-sm">Deep dive into your brand goals, and target audience</p>
+                        </div>
+                       </div>
+
+                       <!-- Strategy -->
+                        <div class="flex flex-col items-center text-center shadow-md p-4">
+                          <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
+                            <h3>2</h3>
+                          </div>
+
+                          <div class="">
+                            <h4 class="font-semibold mb-2">Strategy</h4>
+                            <p class="text-gray-700 text-sm">Develop creative direction and project roadmap</p>
+                          </div>
+                        </div>
+
+                        <!-- Design -->
+                         <div class="flex flex-col items-center text-center shadow-md p-4">
+                          <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
+                            <h3>3</h3>
+                          </div>
+
+                          <div class="">
+                            <h4 class="font-semibold mb-2">Design</h4>
+                            <p class="text-gray-700 text-sm">Create, refine, and perfect visual solutions</p>
+                          </div>
+                         </div>
+
+                         <!-- Delivery -->
+                          <div class="flex flex-col items-center text-center shadow-md p-4">
+                            <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
+                              <h3>4</h3>
+                            </div>
+
+                            <div class="">
+                              <h4 class="font-semibold mb-2">Delivery</h4>
+                              <p class="text-gray-700 text-sm">Finalize and provide all assets and guidelines</p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- call to actions -->
+                     <div class="bg-tm-red text-white text-center pt-8 pb-8 rounded-b-lg">
+                      <div class="">
+                        <h3 class="font-semibold text-3xl mb-2">Ready to Elevate Your Brand?</h3>
+                        <p class="text-sm mb-4 text-center w-full max-w-md mx-auto">Let's collaborate to create designs that not only look amazing but 
+                          also drive eral results for your business.
+                        </p>
+                      </div>
+
+                      <!-- buttons -->
+                       <div class="flex items-center justify-center gap-4 mb-4">
+                        <!-- <button type="button" class="rounded-full bg-white px-4 py-2 text-tm-red font-medium hover:text-white hover:border hover:bg-tm-red">
+                          Start a Project
+                        </button> -->
+                        <RouterLink
+                         to="/contact-us"
+                         class="rounded-full bg-white px-4 py-2 text-tm-red font-medium hover:text-white hover:border hover:bg-tm-red">
+                          Start a Project
+                        </RouterLink>
+
+                        <!-- <button type="button" class="rounded-full border border-white px-4 py-2 font-medium hover:bg-white hover:text-tm-red">
+                          Book Free Consultation
+                        </button> -->
+                        <RouterLink
+                         to="/"
+                         class="rounded-full border border-white px-4 py-2 font-medium hover:bg-white hover:text-tm-red">
+                          Book Free Consultation
+                        </RouterLink>
+                       </div>
+
+                       <!-- desc -->
+                        <h3>Get a response within 24 hours. 
+                          No obligation. 100% satisfaction guaranteed
+                        </h3>
+                     </div>
+                </div>
+              </section>
+
             <!-- Contact section -->
-             <section></section>
+             <section class="py-8">
+              <div class="container mx-auto px-4">
+                <!-- left section and right section -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 mt-4">
+
+                  <!-- left section -->
+                   <div class="bg-white rounded-md p-4 shadow-md">
+                    <!-- title -->
+                     <div class="">
+                      <h3 class="font-semibold text-2xl mb-4">Let's Connect</h3>
+                      <p class="text-sm text-gray-700 mb-4">Have a project in mind? Questions about our services? Reach out 
+                        and let's discuss how we can bring your vision to life.
+                      </p>
+                     </div>
+
+                     <div class="flex flex-col gap-4">
+
+                      <!-- email -->
+                      <div class="flex items-center gap-2">
+                        <img src="/envelope-solid-full.svg" alt="email" width="30" class="rounded-full">
+                        <div class="">
+                          <h3 class="font-semibold">Email</h3>
+                          <p class="text-gray-700 text-sm">tmgrafixlab@gmail.com</p>
+                        </div>
+                      </div>
+
+                      <!-- phone -->
+                       <div class="flex items-center gap-2">
+                        <img src="/phone.png" alt="phone" width="30" class="rounded-full">
+                        <div class="">
+                          <h3 class="font-semibold">Phone</h3>
+                          <p class="text-gray-700 text-sm">+254 7XX XXX XXX</p>
+                        </div>
+                       </div>
+
+                       <!-- location -->
+                        <div class="flex items-center gap-2">
+                          <img src="/map-pin-house.png" alt="map" width="30" class="rounded-full">
+                          <div class="">
+                            <h3 class="font-semibold">Location</h3>
+                            <p class="text-gray-700 text-sm">Nairobi, Kenya</p>
+                          </div>
+                        </div>
+                     </div>
+                   </div>
+
+                   <!-- right section -->
+                    <div class="bg-white rounded-md p-4 shadow-md">
+                      <h3 class="font-semibold mb-2">Send a Message</h3>
+                      <!-- form -->
+                       <form action="" method="post">
+                        <div class="flex flex-col md:flex-row gap-4">
+
+                          <!-- name -->
+                          <div class="">
+                            <label class="block mb-2" for="name">Name</label>
+                            <input required class="w-full outline-none border rounded-md p-2 mb-2" type="text" name="name" id="name">
+                          </div>
+
+                          <!-- email -->
+                           <div class="">
+                            <label class="block mb-2" for="email">Email</label>
+                            <input required class="w-full outline-none border rounded-md p-2 mb-2" type="email" name="email" id="email">
+                           </div>
+                        </div>
+
+                        <!-- service interest -->
+                         <div class="">
+                          <div class="">
+                            <label class="block mb-2" for="service">Service Interest</label>
+                            <select required class="w-full outline-none border rounded-md p-2 mb-2" name="service" id="service">
+                              <option value="">select a Service</option>
+                              <option value="social-media-posts">Social Media Posts</option>
+                              <option value="travel-flyers">Travel Flyers</option>
+                              <option value="political-posters">Political Posters</option>
+                              <option value="general-flyers">General Flyers</option>
+                              <option value="mockups">Mockups</option>
+                              <option value="logos">Logos</option>
+                            </select>
+                          </div>
+                         </div>
+
+                         <!-- message -->
+                          <div class="">
+                            <div class="">
+                              <label class="block mb-2 mt-2" for="message">Message</label>
+                              <textarea required class="rounded-md border w-full outline-none p-2 mb-2" name="message" id="message" rows="4"></textarea>
+                            </div>
+                          </div>
+
+                          <!-- submit button -->
+                           <div class="mt-2 text-center bg-tm-red rounded-md px-4 py-2 w-full text-white font-medium">
+                            <button>
+                              Send Message
+                            </button>
+                           </div>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+             </section>
 
              <!-- Footer section -->
               <Footer />
@@ -219,6 +418,7 @@ import Header from '@/components/Header.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import Marquee from '@/components/Marquee.vue';
 import router from '@/router';
+import { RouterLink } from 'vue-router';
 
     export default {
         components: {
