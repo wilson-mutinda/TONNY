@@ -46,6 +46,40 @@
             </div>
           </div>
 
+          <!-- services -->
+           <div class="relative group">
+            <button type="button" class="text-white font-bold hover:underline hover:underline-offset-4">
+              Services
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40">
+              <RouterLink
+               to="/services" 
+               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                All Services
+              </RouterLink>
+              <RouterLink
+               to=""
+               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                Brand Design
+              </RouterLink>
+              <RouterLink
+               to=""
+               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                Social Media
+              </RouterLink>
+              <RouterLink
+               to=""
+               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                Web Design
+              </RouterLink>
+              <RouterLink
+               to=""
+               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                Pricing Packages
+              </RouterLink>
+            </div>
+           </div>
+
           <!-- Portfolio -->
           <RouterLink
             to="/portfolio"
@@ -59,6 +93,14 @@
             class="text-white font-bold hover:underline hover:underline-offset-4"
             active-class="underline underline-offset-4"
           >Blog</RouterLink>
+
+          <!-- faqs -->
+           <RouterLink
+            to="/faqs"
+            class="text-white font-bold hover:underline hover:underline-offset-4"
+            active-class="underline underline-offset-4">
+            FAQs
+           </RouterLink>
 
           <!-- Contact -->
           <RouterLink
@@ -103,6 +145,45 @@
               </div>
             </div>
 
+            <!-- services -->
+             <div class="flex flex-col">
+              <button
+              @click="isServiceOpen = !isServiceOpen"
+               type="button"
+               class="text-white font-bold text-left hover:underline hover:underline-offset-4">
+                Services
+              </button>
+              <div
+               v-if="isServiceOpen" 
+               class="ml-4 mt-2 flex flex-col gap-2">
+                <RouterLink
+                 to=""
+                 class="text-white text-sm hover:underline">
+                  All Services
+                </RouterLink>
+                <RouterLink
+                 to=""
+                 class="text-white text-sm hover:underline">
+                  Brand Design
+                </RouterLink>
+                <RouterLink
+                 to=""
+                 class="text-white text-sm hover:underline">
+                  Social Media
+                </RouterLink>
+                <RouterLink
+                 to=""
+                 class="text-white text-sm hover:underline">
+                  Web Design
+                </RouterLink>
+                <RouterLink
+                 to=""
+                 class="text-white text-sm hover:underline">
+                  Pricing Packages
+                </RouterLink>
+              </div>
+             </div>
+
             <RouterLink
               to="/portfolio"
               class="text-white font-bold hover:underline hover:underline-offset-4"
@@ -114,6 +195,14 @@
               class="text-white font-bold hover:underline hover:underline-offset-4"
               active-class="underline underline-offset-4"
             >Blog</RouterLink>
+
+            <!-- faqs -->
+             <RouterLink
+              to="faqs"
+              class="text-white font-bold hover:underline hover:underline-offset-4"
+              active-class="underline underline-offset-4">
+              FAQs
+             </RouterLink>
 
             <RouterLink
               to="/contact-us"
@@ -136,7 +225,8 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      isContactOpen: false
+      isContactOpen: false,
+      isServiceOpen: false
     };
   }
 };
@@ -144,7 +234,7 @@ export default {
 
 <style scoped>
 /* Optional: smooth underline transition */
-.hover\:underline {
+.hover:underline {
   transition: all 0.2s ease-in-out;
 }
 </style>

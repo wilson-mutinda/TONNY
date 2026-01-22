@@ -8,6 +8,7 @@ import ContactPage from '@/pages/ContactPage.vue'
 import Contact from '@/pages/Contact.vue'
 import AboutPage from '@/pages/AboutPage.vue'
 import Blog from '@/pages/Blog.vue'
+import FAQPage from '@/pages/FAQPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +19,8 @@ const router = createRouter({
     { path: '/contact', name: 'contact', component: ContactPage },
     { path: '/contact-us', name: 'contact-us', component: Contact },
     { path: '/about', name: 'about', component: AboutPage },
-    { path: '/blog', name: 'blog', component: Blog }
+    { path: '/blog', name: 'blog', component: Blog },
+    { path: '/faqs', name: 'faqs', component: FAQPage }
   ],
 })
 

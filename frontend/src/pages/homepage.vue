@@ -23,21 +23,29 @@
                   <!-- Brand identity -->
                    <div class="bg-white rounded-md p-4 shadow-md">
                     <img src="/diamond.png" alt="diamond" width="30" class="icon-red mb-2">
-                    <h3 class="font-semibold mb-2">Brand Identity</h3>
+                    <h3 class="font-semibold text-tm-red mb-2">Branding & Identity Design</h3>
                     <p class="text-gray-600 text-sm mb-2 max-w-sm">Complete brand systems including logos, style guides, and brand strategy</p>
 
                     <div class="">
                       <div class="flex gap-1 items-center">
                         <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Logo Design</span>
+                        <span class="text-gray-600 text-sm">Logo Design & Redesign</span>
                       </div>
                       <div class="flex gap-1 items-center">
                         <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Brand Guidelines</span>
+                        <span class="text-gray-600 text-sm">Brand Identity Systems (colors, typography, icons, patterns)</span>
                       </div>
                       <div class="flex gap-1 items-center">
                         <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Brand Strategy</span>
+                        <span class="text-gray-600 text-sm">Brand Style Guides & Guidelines</span>
+                      </div>
+                      <div class="flex gap-1 items-center">
+                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                        <span class="text-gray-600 text-sm">Brand Strategy Consultation</span>
+                      </div>
+                      <div class="flex gap-1 items-center">
+                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                        <span class="text-gray-600 text-sm">Visual Brand Audit (evaluating existing brand visuals)</span>
                       </div>
                     </div>
                    </div>
@@ -45,21 +53,42 @@
                    <!-- Digital design -->
                     <div class="bg-white rounded-md p-4 shadow-md">
                       <img src="/monitor.png" alt="monitor" width="30" class="icon-red mb-2">
-                      <h3 class="font-semibold mb-2">Digital Design</h3>
+                      <h3 class="font-semibold text-tm-red mb-2">Graphic & Digital Design</h3>
                       <p class="text-gray-600 text-sm mb-2 max-w-sm">Engaging digital experience for web and mobile platforms.</p>
 
                       <div class="">
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">UI/UX Design</span>
+                          <span class="text-gray-600 text-sm">Social Media Graphics & Templates (Instagram, LinkedIn, TikTok, etc)</span>
+                        </div>
+
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Digital ads & Banners</span>
                         </div>
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Web Design</span>
+                          <span class="text-gray-600 text-sm">Website Graphics & UI Elements</span>
                         </div>
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Social Media Graphics</span>
+                          <span class="text-gray-600 text-sm">Presentation Design (pitch decks, corporate slides)</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Infographics & Data Visualization</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Packaging & Label Design</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Tour & Travel Designs</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Political Designs</span>
                         </div>
                       </div>
                     </div>
@@ -67,24 +96,93 @@
                     <!-- Print and marketting -->
                      <div class="bg-white rounded-md p-4 shadow-md">
                       <img src="/printer.png" alt="printer" class="icon-red mb-2" width="30">
-                      <h3 class="font-semibold mb-2">Print & Marketing</h3>
-                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Physical and promotional materials that make lasting impressions</p>
+                      <h3 class="font-semibold text-tm-red mb-2">Print & Offline Design</h3>
+                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Even in digital age, print still matters for premium brands:</p>
 
                       <div class="">
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Business Cards</span>
+                          <span class="text-gray-600 text-sm">Business Cards & Stationary</span>
                         </div>
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Bronchures & Flyers</span>
+                          <span class="text-gray-600 text-sm">Bronchures, Flyers & Posters</span>
                         </div>
                         <div class="flex gap-1 items-center">
                           <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Packaging Design</span>
+                          <span class="text-gray-600 text-sm">Event & Trade Show Materials</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Booklets & Catalogs</span>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                          <span class="text-gray-600 text-sm">Merchandise & Apparel Design</span>
                         </div>
                       </div>
                      </div>
+
+                     <!-- Copywriting & Content Services -->
+                      <div class="bg-white rounded-md p-4 shadow-md">
+                        <img src="/copywriting.png" alt="printer" class="icon-red mb-2" width="30">
+                        <h3 class="font-semibold text-tm-red mb-2">Copywriting & Content Services</h3>
+                        <p class="text-gray-600 text-sm mb-2 max-w-sm">This is your value add design + words = full brand massaging:</p>
+
+                        <div class="">
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Taglines & Brand Slogans</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Website Copy (home, about, service pages)</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Blog Content creation (short posts, design tips, case studies)</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Social Media Captions & Content Calendars</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Email Newsletter Copy</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Product Descriptions (for e-commerce or portfolios)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- UX / Digital Strategy -->
+                       <div class="bg-white rounded-md p-4 shadow-md">
+                        <img src="/ui.png" alt="printer" class="icon-red mb-2" width="30">
+                        <h3 class="font-semibold text-tm-red mb-2">UX / Digital Strategy (Optional Premium Services)</h3>
+                        <p class="text-gray-600 text-sm mb-2 max-w-sm">If you want to offer higher-value packages:</p>
+
+                        <div class="">
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Website Wireframes & Mockups</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">User Interface Design for Web or Apps</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">User Experience Audits & Consultation</span>
+                          </div>
+                          <div class="flex gap-1 items-center">
+                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
+                            <span class="text-gray-600 text-sm">Conversion-focused Landing Page Design</span>
+                          </div>
+                        </div>
+                      </div>
+
                 </div>
             </div>
            </section>

@@ -169,7 +169,7 @@
                      </p>
 
                      <!-- button -->
-                      <button class="round-md p-2 border border-black rounded-md mt-2 bg-white">
+                      <button @click="openFaqs" class="round-md p-2 border border-black rounded-md mt-2 bg-white">
                         <div class="flex items-center gap-1">
                             <img src="/help.png" alt="help" width="20">
                             <span class="text-sm text-tm-red font-medium">Visit FAQ Page</span>
@@ -226,6 +226,7 @@
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
 import Marquee from '@/components/Marquee.vue';
+import router from '@/router';
 
     export default {
 
@@ -237,6 +238,12 @@ import Marquee from '@/components/Marquee.vue';
 
         data() {
             return {
+            }
+        },
+
+        methods: {
+            openFaqs() {
+                router.push('/faqs')
             }
         }
     }
