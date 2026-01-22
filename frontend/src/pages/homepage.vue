@@ -13,7 +13,7 @@
             <div class="container mx-auto px-4">
               <!-- title -->
                <div class="text-center">
-                <h3 class="text-tm-red font-medium text-3xl mb-3">My Creative Services</h3>
+                <h3 class="text-tm-red font-medium text-3xl mb-3">Our Creative Services</h3>
                 <p class="text-gray-600 text-sm">Comprehensive design solutions tailored to your brand's unique needs</p>
                </div>
 
@@ -94,7 +94,7 @@
                 <div class="container mx-auto px-4 bg-gray-200 p-4 rounded-md shadow-md">
 
                     <!-- title -->
-                     <h4 class="text-tm-red font-medium text-3xl text-center mb-2">My Creative Journey</h4>
+                     <h4 class="text-tm-red font-medium text-3xl text-center mb-2">Our Creative Journey</h4>
                      <p class="text-gray-500 text-center max-w-xl mx-auto mb-4">TMGrafixLab is a Nairobi-based
                        creative studio where passion meets innovation. Ideas are transformed into memorable visual experiences.</p>
 
@@ -149,36 +149,37 @@
                   <p class="text-sm text-gray-600 mt-2">From startups to established enterprises, we deliver designs that make an impact</p>
                  </div>
 
-                 <!-- brand grids -->
-                  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
-                    <!-- brand A -->
-                     <div class="bg-black/50 p-2 rounded-md">
-                      <h1>Brand A</h1>
-                     </div>
+                 <!-- moving brands -->
+                  <div class="mt-6 relative w-full overflow-hidden">
+                    <div class="flex gap-6 w-max brand-track">
 
-                     <!-- brand B -->
-                      <div class="bg-black/50 p-2 rounded-md">
-                        <h1>Brand B</h1>
-                      </div>
-
-                      <!-- brand C -->
-                       <div class="bg-black/50 p-2 rounded-md">
-                        <h1 class="">Brand C</h1>
+                      <!-- Brands (first-brands) -->
+                       <div class="brand-item bg-black/40 p-4 rounded-md flex items-center justify-center">
+                        <img src="/TM LOGO3.png" alt="Brand A" class="w-20 h-20 object-contain">
                        </div>
 
-                       <!-- brand D -->
-                        <div class="bg-black/50 p-2 rounded-md">
-                          <h1>BRAND D</h1>
-                        </div>
+                       <div class="brand-item bg-tm-red p-4 rounded-md flex items-center justify-center">
+                        <img src="/Logo1.png" alt="Brand B" class="w-20 h-20 object-contain">
+                       </div>
+
+                       <div class="brand-item bg-tm-red p-4 rounded-full flex items-center justify-center">
+                        <img src="/Logo2.png" alt="Brand C" class="w-20 h-20 object-contain">
+                       </div>
+
+                       <div class="brand-item bg-black/40 p-4 rounded-full flex items-center justify-center">
+                        <img src="/logo7.png" alt="Brand D" class="w-20 h-20 object-contain">
+                       </div>
+
+                    </div>
                   </div>
 
                   <!-- brand testimonials -->
                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
 
                     <!-- first testimonial -->
-                     <div class="bg-black/50 rounded-md p-4">
+                     <div class="bg-tm-red rounded-md p-4">
                       <!-- description -->
-                       <h3 class="text-gray-800 italic mb-2">"TMGrafixLab has transformed our brand identity completely. Their attention to 
+                       <h3 class="text-white italic mb-2">"TMGrafixLab has transformed our brand identity completely. Their attention to 
                         detail and creative vision exceeded all expectations."
                        </h3>
 
@@ -189,14 +190,14 @@
                      </div>
 
                      <!-- second testimonial -->
-                      <div class="bg-black/50 rounded-md p-4">
+                      <div class="bg-tm-red rounded-md p-4">
                         <!-- description -->
                          <h3 class="text-white italic mb-2">"Working with TMGrafixLab was a game-changer. They understood our vision and 
                           delivered designs that perfectly captured our brand essence."</h3>
 
                           <div class="">
-                            <h3 class="font-medium text-gray-800 mb-2">Antony Muigai</h3>
-                            <p class="font-medium text-gray-800">Founder, TMGrafixLab</p>
+                            <h3 class="font-medium text-white mb-2">Antony Muigai</h3>
+                            <p class="font-medium text-white">Founder, TMGrafixLab</p>
                           </div>
                       </div>
 
@@ -209,7 +210,7 @@
                 <div class="container mx-auto px-4 bg-white rounded-md p-4">
                   <!-- title -->
                    <div class="text-center">
-                    <h3 class="font-medium text-3xl text-tm-red mb-4">Design Process</h3>
+                    <h3 class="font-medium text-3xl text-tm-red mb-4">Our Design Process</h3>
                     <p class="text-gray-700 text-sm mb-4">A structured yet flexible approach ensuring your project's success</p>
                    </div>
 
@@ -480,6 +481,23 @@ import { RouterLink } from 'vue-router';
 
 .icon-red {
     filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(5065%) hue-rotate(355deg) brightness(95%) contrast(110%);
+}
+
+.brand-track {
+  animation: brandMarquee 12s linear infinite;
+}
+
+.brand-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes brandMarquee {
+  0% {
+    transform: translateX(110vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 </style>

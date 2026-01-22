@@ -9,19 +9,19 @@
                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
 
                     <!-- img 1 -->
-                     <div class="p-2 bg-white shadow-md rounded-md flex flex-col items-center relative group">
+                     <div class="p-2 bg-white shadow-md flex flex-col items-center relative group">
                         <img src="/Hon George-01.jpg" alt="political posters" class="transition-all duration-300 ease-out hover:scale-125 group-hover:z-10">
                         <span class="text-gray-700 font-semibold mt-1">Political Posters</span>
                      </div>
 
                      <!-- img 2 -->
-                      <div class="p-2 bg-white shadow-md rounded-md flex flex-col items-center relative group">
+                      <div class="p-2 bg-white shadow-md flex flex-col items-center relative group">
                         <img src="/MURANGA HOCKEY DERBY copy.jpg" alt="sports posters" class="transition-all duration-300 ease-out hover:scale-125 group-hover:z-10">
                         <span class="text-gray-700 font-semibold mt-1">Sports Posters</span>
                       </div>
 
                       <!-- img 3 -->
-                       <div class="p-2 bg-white shadow-md rounded-md flex flex-col items-center relative group">
+                       <div class="p-2 bg-white shadow-md flex flex-col items-center relative group">
                         <img src="/TM MERCH.png" alt="travel posters" class="transition-all duration-300 ease-out hover:scale-125 group-hover:z-10">
                         <span class="text-gray-700 font-semibold mt-1">Mockups</span>
                        </div>

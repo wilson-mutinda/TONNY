@@ -33,20 +33,20 @@
 
                             <!-- address -->
                              <div class="flex items-center gap-1">
-                                <img src="/map-pin-house.png" alt="address" width="25" class="bg-white rounded-full p-1">
+                                <img src="/Asset 11.png" alt="address" width="25" class="rounded-full p-1">
                                 <span class="text-tm-gray">Nairobi</span>
                              </div>
 
                              <!-- phone -->
                               <div class="flex items-center gap-1">
                                 <img src="/phone-solid-full.svg" alt="phone" width="25" class="bg-white rounded-full p-1">
-                                <span class="text-tm-gray">+254 7XX XXX XXX</span>
+                                <span class="text-tm-gray">+254 748 244 583</span>
                               </div>
 
                              <!-- whatsapp -->
                               <div class="flex items-center gap-1">
-                                <img src="/whatsapp.png" alt="whatsapp" width="25" class="bg-white rounded-full p-1">
-                                <span class="text-tm-gray">+254 7XX XXX XXX</span>
+                                <img src="/Asset 8.png" alt="whatsapp" width="25" class="rounded-full p-1">
+                                <span class="text-tm-gray">+254 723 777 601</span>
                               </div>
 
                               <!-- email -->
@@ -66,21 +66,25 @@
                              <!-- follow us buttons -->
                             <div class="flex gap-4">
                                 <!-- fb button -->
-                                <button type="button" class="bg-white rounded-full p-1">
-                                    <img src="/facebook.png" alt="fb" width="25">
+                                <button type="button" class="rounded-full p-1">
+                                    <img src="/Asset 3.png" alt="fb" class="h-10 w-10">
                                 </button>
                                 <!-- twitter button -->
-                                <button type="button" class="bg-white rounded-full p-1">
-                                    <img src="/twitter.png" alt="x" width="25">
+                                <button type="button" class="rounded-full p-1">
+                                    <img src="/Asset 12.png" alt="x" width="25">
                                 </button>
                                 <!-- linked in button -->
-                                <button type="button" class="bg-white rounded-full p-1">
-                                    <img src="/linkedin.png" alt="ln" width="25">
+                                <button type="button" class="rounded-full p-1">
+                                    <img src="/Asset 10.png" alt="ln" width="25">
                                 </button>
                                 <!-- ig button -->
-                                <button type="button" class="bg-white rounded-full p-1">
-                                    <img src="/instagram.png" alt="ig" width="25">
+                                <button type="button" class="rounded-full p-1">
+                                    <img src="/Asset 4.png" alt="ig" width="25">
                                 </button>
+                                <!-- tiktok -->
+                                 <button type="button" class="rounded-full p-1">
+                                    <img src="/Asset 6.png" alt="tiktok" class="h-8 w-8">
+                                 </button>
                             </div>
                         </div>
                  </div>
