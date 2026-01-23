@@ -15,101 +15,90 @@
         </div>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex gap-4 items-center">
+<div class="hidden md:flex gap-4 items-center">
 
-          <!-- Home -->
-          <RouterLink
-            to="/"
-            class="text-white font-bold hover:underline hover:underline-offset-4"
-            active-class="underline underline-offset-4"
-          >Home</RouterLink>
+  <!-- Home -->
+  <RouterLink
+    to="/"
+    class="text-white font-bold hover:underline hover:underline-offset-4"
+    active-class="underline underline-offset-4"
+  >Home</RouterLink>
 
-          <!-- About Dropdown -->
-          <div class="relative group">
-            <button
-              type="button"
-              class="text-white font-bold hover:underline hover:underline-offset-4"
-            >
-              About
-            </button>
-            <div
-              class="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40"
-            >
-              <RouterLink
-                to="/about"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >About Us</RouterLink>
-              <RouterLink
-                to="/faq"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >FAQs</RouterLink>
-            </div>
-          </div>
+  <!-- About Dropdown -->
+  <div class="relative group">
+    <button
+      type="button"
+      class="text-white font-bold hover:underline hover:underline-offset-4"
+    >
+      About
+    </button>
+    <div
+      class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40"
+    >
+      <RouterLink
+        to="/about"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+      >About Us</RouterLink>
+      <RouterLink
+        to="/blog"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+      >Blog & Insights</RouterLink>
+      <RouterLink
+        to="/faqs"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+      >FAQs</RouterLink>
+    </div>
+  </div>
 
-          <!-- services -->
-           <div class="relative group">
-            <button type="button" class="text-white font-bold hover:underline hover:underline-offset-4">
-              Services
-            </button>
-            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40">
-              <RouterLink
-               to="/services" 
-               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                All Services
-              </RouterLink>
-              <RouterLink
-               to=""
-               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                Brand Design
-              </RouterLink>
-              <RouterLink
-               to=""
-               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                Social Media
-              </RouterLink>
-              <RouterLink
-               to=""
-               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                Web Design
-              </RouterLink>
-              <RouterLink
-               to=""
-               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                Pricing Packages
-              </RouterLink>
-            </div>
-           </div>
+  <!-- Services -->
+  <div class="relative group">
+    <button type="button" class="text-white font-bold hover:underline hover:underline-offset-4">
+      Services
+    </button>
+    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40">
+      <RouterLink
+        to="/services" 
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+        All Services
+      </RouterLink>
+      <RouterLink
+        to="/services/brand-design"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+        Brand Design
+      </RouterLink>
+      <RouterLink
+        to="/services/social-media"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+        Social Media
+      </RouterLink>
+      <RouterLink
+        to="/services/web-design"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+        Web Design
+      </RouterLink>
+      <RouterLink
+        to="/services/pricing"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+        Pricing Packages
+      </RouterLink>
+    </div>
+  </div>
 
-          <!-- Portfolio -->
-          <RouterLink
-            to="/portfolio"
-            class="text-white font-bold hover:underline hover:underline-offset-4"
-            active-class="underline underline-offset-4"
-          >Portfolio</RouterLink>
+  <!-- Portfolio -->
+  <RouterLink
+    to="/portfolio"
+    class="text-white font-bold hover:underline hover:underline-offset-4"
+    active-class="underline underline-offset-4"
+  >Portfolio</RouterLink>
 
-          <!-- Blog -->
-          <RouterLink
-            to="/blog"
-            class="text-white font-bold hover:underline hover:underline-offset-4"
-            active-class="underline underline-offset-4"
-          >Blog</RouterLink>
+  <!-- Contact -->
+  <RouterLink
+    to="/contact-us"
+    class="text-white font-bold hover:underline hover:underline-offset-4"
+    active-class="underline underline-offset-4"
+  >Contact</RouterLink>
 
-          <!-- faqs -->
-           <RouterLink
-            to="/faqs"
-            class="text-white font-bold hover:underline hover:underline-offset-4"
-            active-class="underline underline-offset-4">
-            FAQs
-           </RouterLink>
-
-          <!-- Contact -->
-          <RouterLink
-            to="/contact-us"
-            class="text-white font-bold hover:underline hover:underline-offset-4"
-            active-class="underline underline-offset-4"
-          >Contact</RouterLink>
-
-        </div>
+</div>
 
         <!-- Mobile Hamburger -->
         <div class="md:hidden relative">
@@ -141,7 +130,7 @@
               </button>
               <div v-if="isContactOpen" class="ml-4 mt-2 flex flex-col gap-2">
                 <RouterLink to="/about" class="text-white text-sm hover:underline">About Us</RouterLink>
-                <RouterLink to="/faq" class="text-white text-sm hover:underline">FAQs</RouterLink>
+                <RouterLink to="/faqs" class="text-white text-sm hover:underline">FAQs</RouterLink>
               </div>
             </div>
 
@@ -195,14 +184,6 @@
               class="text-white font-bold hover:underline hover:underline-offset-4"
               active-class="underline underline-offset-4"
             >Blog</RouterLink>
-
-            <!-- faqs -->
-             <RouterLink
-              to="faqs"
-              class="text-white font-bold hover:underline hover:underline-offset-4"
-              active-class="underline underline-offset-4">
-              FAQs
-             </RouterLink>
 
             <RouterLink
               to="/contact-us"
