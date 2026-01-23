@@ -332,7 +332,7 @@
                         <!-- Pricing & Payment -->
                          <section v-if="activeSection == 'pricing'">
                             <div class="flex flex-col items-center">
-                                <img src="/customer-support(1).png" alt="about" width="50" class="icon-red mb-4">
+                                <img src="/bill.png" alt="about" width="50" class="icon-red mb-4">
                                 <p class="text-tm-red font-medium text-2xl mb-2">Pricing & Payments</p>
                                 <p class="text-gray-600 mb-2">Get to know how our pricing varies</p>
                             </div>
