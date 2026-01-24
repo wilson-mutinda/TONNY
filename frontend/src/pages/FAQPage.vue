@@ -235,6 +235,41 @@
                                         elevate existing visuals while keeping brand consistency intact.
                                       </p>
                                   </div>
+
+                                  <!-- web design -->
+                                  <div class="mt-2">
+                                    <!-- title -->
+                                     <div class="flex items-center justify-between">
+                                        <h3 class="text-tm-red text-xl font-medium mb-2">Web Design & Development</h3>
+                                        <button @click="toggleServiceNote('web')" type="button" class="">
+                                            <img :src="activeServiceNote === 'web' ? '/minus.png' : '/plus(2).png'" alt="plus" width="20" class="icon-red">
+                                        </button>
+                                     </div>
+
+                                     <!-- desc -->
+                                      <p v-if="activeServiceNote === 'web'" class="text-gray-600 text-sm">
+                                        We design and develop responsive, high-performance websites that look great and 
+                                        work flawlessly across all devices. From leading pages to full business websites, our web 
+                                        solutions are built to engage users, communicate clearly, and drive results.
+                                      </p>
+                                  </div>
+
+                                  <!-- mobile design -->
+                                   <div class="mt-2">
+                                    <!-- title -->
+                                     <div class="flex items-center justify-between">
+                                        <h3 class="text-tm-red text-xl font-medium mb-2">Mobile App Design (UI/UX)</h3>
+                                        <button @click="toggleServiceNote('app')" type="button" class="">
+                                            <img :src="activeServiceNote === 'app' ? '/minus.png' : '/plus(2).png'" alt="plus" width="20" class="icon-red">
+                                        </button>
+                                     </div>
+
+                                     <!-- desc -->
+                                      <p v-if="activeServiceNote === 'app'" class="text-gray-600 text-sm">
+                                        We create inituitive and visually compelling mobile app interfaces focussed on user experience and usability. 
+                                        Our app designs are guided by user behaviour, clarity, and flow - ensuring your product is easy to use and visually memorable.
+                                      </p>
+                                   </div>
                              </div>
                         </section>
 
@@ -434,6 +469,7 @@ import { RouterLink } from 'vue-router';
                 activeRevisionNote: 'amount',
 
                 activePricingNote: 'how'
+
             }
         },
 
