@@ -16,6 +16,20 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.no-select': {
+          'user-select': 'none',
+          '-webkit-user-select': 'none',
+          '-moz-user-select': 'none',
+          '-ms-user-select': 'none',
+        },
+        '.no-drag': {
+          '-webkit-user-drag': 'none',
+          'user-drag': 'none',
+        }
+      })
+    }
+  ],
 }
-

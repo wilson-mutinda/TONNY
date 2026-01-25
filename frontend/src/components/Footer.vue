@@ -46,7 +46,7 @@
                              <!-- whatsapp -->
                               <div class="flex items-center gap-1">
                                 <img src="/Asset 8.png" alt="whatsapp" width="25" class="rounded-full p-1">
-                                <span class="text-tm-gray">+254 723 777 601</span>
+                                <span class="text-tm-gray">+254 748 244 583</span>
                               </div>
 
                               <!-- email -->

@@ -11,7 +11,7 @@
             <div class="container mx-auto px-4">
                 <!-- title -->
                  <div class="mb-4">
-                    <h3 class="text-center mb-4 font-bold text-tm-red text-3xl">TmGrafixLab FAQs</h3>
+                    <h3 class="text-center mb-4 font-semibold text-tm-red text-3xl">TmGrafixLab FAQs</h3>
                     <p class="text-sm text-center text-gray-600 mx-auto max-w-md">Everything you need to know about working 
                         with TmGrafixLab, our process, and what makes us different.
                     </p>
@@ -25,7 +25,7 @@
 
                     <!-- projects -->
                      <div class="flex flex-col items-center bg-white shadow-md rounded-md p-2">
-                        <h3 class="text-tm-red font-medium text-2xl mb-1">100+</h3>
+                        <h3 class="text-tm-red font-medium text-2xl mb-1">{{ projectCount }}+</h3>
                         <p class="text-gray-700">PROJECTS DELIVERED</p>
                      </div>
 
@@ -37,7 +37,7 @@
 
                       <!-- satisfaction -->
                        <div class="flex flex-col items-center bg-white shadow-md rounded-md p-2">
-                        <h3 class="text-tm-red font-medium text-2xl mb-1">98%</h3>
+                        <h3 class="text-tm-red font-medium text-2xl mb-1">{{ satisfactionCount }}%</h3>
                         <p class="text-gray-700">CLIENT SATISFACTION</p>
                        </div>
                    </div>
@@ -468,12 +468,31 @@ import { RouterLink } from 'vue-router';
 
                 activeRevisionNote: 'amount',
 
-                activePricingNote: 'how'
+                activePricingNote: 'how',
+
+                projectCount: 0,
+
+                satisfactionCount: 0
 
             }
         },
 
         methods: {
+
+            animateCount(target, key) {
+                let current = 0
+                const increment = Math.ceil(target / 60)
+
+                const timer = setInterval(() => {
+                    current += increment
+                    if (current >= target) {
+                        this[key] = target
+                        clearInterval(timer)
+                    } else {
+                        this[key] = current
+                    }
+                }, 20)
+            },
 
             togglePricingNote(note) {
                 this.activePricingNote = this.activePricingNote === note ? null : note
@@ -502,6 +521,8 @@ import { RouterLink } from 'vue-router';
 
         mounted() {
             this.activeSection = 'about'
+            this.animateCount(200, 'projectCount')
+            this.animateCount(98, 'satisfactionCount')
         }
     }
 </script>

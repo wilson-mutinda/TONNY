@@ -252,19 +252,19 @@
                     <div class="flex gap-6 w-max brand-track">
 
                       <!-- Brands (first-brands) -->
-                       <div class="brand-item bg-black/40 p-4 rounded-md flex items-center justify-center">
+                       <div class="brand-item p-4 flex items-center justify-center">
                         <img src="/TM LOGO3.png" alt="Brand A" class="w-20 h-20 object-contain">
                        </div>
 
-                       <div class="brand-item bg-tm-red p-4 rounded-md flex items-center justify-center">
+                       <div class="brand-item p-4 flex items-center justify-center">
                         <img src="/Logo1.png" alt="Brand B" class="w-20 h-20 object-contain">
                        </div>
 
-                       <div class="brand-item bg-tm-red p-4 rounded-full flex items-center justify-center">
+                       <div class="brand-item p-4 flex items-center justify-center">
                         <img src="/Logo2.png" alt="Brand C" class="w-20 h-20 object-contain">
                        </div>
 
-                       <div class="brand-item bg-black/40 p-4 rounded-full flex items-center justify-center">
+                       <div class="brand-item p-4 flex items-center justify-center">
                         <img src="/logo7.png" alt="Brand D" class="w-20 h-20 object-contain">
                        </div>
 
