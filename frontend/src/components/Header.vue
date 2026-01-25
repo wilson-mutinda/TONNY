@@ -146,7 +146,7 @@
                v-if="isServiceOpen" 
                class="ml-4 mt-2 flex flex-col gap-2">
                 <RouterLink
-                 to=""
+                 to="/services"
                  class="text-white text-sm hover:underline">
                   All Services
                 </RouterLink>
