@@ -49,12 +49,6 @@
                                 <span class="text-tm-gray">+254 748 244 583</span>
                                </a>
 
-                              <!-- email -->
-                               <div class="flex items-center gap-1">
-                                <img src="/envelope-solid-full.svg" alt="email" width="25" class="bg-white rounded-full p-1">
-                                <span class="text-tm-gray">tmgrafixlab@gmail.com</span>
-                               </div>
-
                                <!-- email -->
                                 <a href="mailto:tmgrafixlab@gmail.com" class="flex items-center gap-1">
                                     <img src="/envelope-solid-full.svg" alt="email" width="25" class="bg-white rounded-full p-1">
