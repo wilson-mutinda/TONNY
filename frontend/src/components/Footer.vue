@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <!-- footer section -->
-        <section class="bg-gradient-to-b from-tm-red to-tm-black py-16 md:py-8">
+        <section class="bg-gradient-to-b from-tm-red to-tm-black py-6 md:py-8">
             <!-- container -->
             <div class="container px-4 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <!-- logo & description -->
