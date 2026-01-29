@@ -54,6 +54,12 @@
                                 <img src="/envelope-solid-full.svg" alt="email" width="25" class="bg-white rounded-full p-1">
                                 <span class="text-tm-gray">tmgrafixlab@gmail.com</span>
                                </div>
+
+                               <!-- email -->
+                                <a href="mailto:tmgrafixlab@gmail.com" class="flex items-center gap-1">
+                                    <img src="/envelope-solid-full.svg" alt="email" width="25" class="bg-white rounded-full p-1">
+                                    <span class="text-tm-gray">tmgrafixlab@gmail.com</span>
+                                </a>
                           </div>
                        </div>
 
@@ -73,10 +79,12 @@
                                 <button type="button" class="rounded-full p-1">
                                     <img src="/Asset 12.png" alt="x" width="25">
                                 </button>
+
                                 <!-- linked in button -->
                                 <button type="button" class="rounded-full p-1">
                                     <img src="/Asset 10.png" alt="ln" width="25">
                                 </button>
+
                                 <!-- ig button -->
                                 <a href="https://www.instagram.com/tmgrafixlab/" target="_blank" rel="noopener noreferrer" class="rounded-full p-1">
                                     <img src="/Asset 4.png" alt="ig" width="25">
