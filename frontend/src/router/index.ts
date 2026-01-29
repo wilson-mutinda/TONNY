@@ -11,6 +11,12 @@ import FAQPage from '@/pages/FAQPage.vue'
 import ServicePage from '@/pages/ServicePage.vue'
 import LogoDesign from '@/pages/LogoDesign.vue'
 import ServiceLayout from '@/pages/ServiceLayout.vue'
+import BrandIdentityPAge from '@/pages/BrandIdentityPAge.vue'
+import SocialMediaDesignPage from '@/pages/SocialMediaDesignPage.vue'
+import FlyerPosterPage from '@/pages/FlyerPosterPage.vue'
+import PrintMarketingPage from '@/pages/PrintMarketingPage.vue'
+import MockupsPresentationPage from '@/pages/MockupsPresentationPage.vue'
+import WebDesignPage from '@/pages/WebDesignPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +38,36 @@ const router = createRouter({
         path: 'logo-design',
         name: 'services-logo-design',
         component: LogoDesign
+      },
+      {
+        path: 'brand-identity',
+        name: 'services-brand-identity',
+        component: BrandIdentityPAge
+      },
+      {
+        path: 'social-media-design',
+        name: 'services-social-media-design',
+        component: SocialMediaDesignPage
+      },
+      {
+        path: 'flyer-posters',
+        name: 'services-flyer-posters',
+        component: FlyerPosterPage
+      },
+      {
+        path: 'print-marketing',
+        name: 'services-print-marketing',
+        component: PrintMarketingPage
+      },
+      {
+        path: 'mockups-presentation',
+        name: 'services-mockups-presentation',
+        component: MockupsPresentationPage
+      },
+      {
+        path: 'web-design',
+        name: 'services-web-design',
+        component: WebDesignPage
       }
     ] },
   ],

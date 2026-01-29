@@ -1,12 +1,18 @@
 <!-- pages/services/ServicesLayout.vue -->
 <template>
   <div class="bg-tm-gray min-h-screen">
+
+    <!-- Header -->
+     <Header />
     
     <!-- Marquee (if you want it on all service pages) -->
     <Marquee />
     
     <!-- This is where child components will render -->
     <router-view></router-view>
+
+    <!-- Footer -->
+     <Footer />
   </div>
 </template>
 
