@@ -43,11 +43,11 @@
                                 <span class="text-tm-gray">+254 748 244 583</span>
                               </div>
 
-                             <!-- whatsapp -->
-                              <div class="flex items-center gap-1">
+                              <!-- whatsapp -->
+                               <a href="https://wa.me/254748244583" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1">
                                 <img src="/Asset 8.png" alt="whatsapp" width="25" class="rounded-full p-1">
                                 <span class="text-tm-gray">+254 748 244 583</span>
-                              </div>
+                               </a>
 
                               <!-- email -->
                                <div class="flex items-center gap-1">
@@ -64,11 +64,11 @@
                              <h4 class="text-tm-gray font-bold mb-4">Follow Us</h4>
 
                              <!-- follow us buttons -->
-                            <div class="flex gap-4">
+                            <div class="flex gap-4 items-center">
                                 <!-- fb button -->
-                                <button type="button" class="rounded-full p-1">
+                                <a href="https://facebook.com/Tmgrafixlab" target="_blank" rel="noopener noreferrer" class="rounded-full p-1">
                                     <img src="/Asset 3.png" alt="fb" class="h-10 w-10">
-                                </button>
+                                </a>
                                 <!-- twitter button -->
                                 <button type="button" class="rounded-full p-1">
                                     <img src="/Asset 12.png" alt="x" width="25">
@@ -78,9 +78,9 @@
                                     <img src="/Asset 10.png" alt="ln" width="25">
                                 </button>
                                 <!-- ig button -->
-                                <button type="button" class="rounded-full p-1">
+                                <a href="https://www.instagram.com/tmgrafixlab/" target="_blank" rel="noopener noreferrer" class="rounded-full p-1">
                                     <img src="/Asset 4.png" alt="ig" width="25">
-                                </button>
+                                </a>
                                 <!-- tiktok -->
                                  <button type="button" class="rounded-full p-1">
                                     <img src="/Asset 6.png" alt="tiktok" class="h-8 w-8">
