@@ -96,7 +96,7 @@
                 to="/services/mockups-presentation"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
               >
-                Mockups & Presentation
+                Mockups
               </RouterLink>
               
               <!-- Digital Services -->
@@ -295,7 +295,7 @@
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
                   @click="closeAllMenus"
                 >
-                  Mockups & Presentation
+                  Mockups
                 </RouterLink>
                 
                 <!-- Digital Services -->
