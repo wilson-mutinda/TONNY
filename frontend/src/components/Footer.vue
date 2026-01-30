@@ -111,17 +111,17 @@
                         </a>
                         
                         <!-- tiktok -->
-                        <a href="#" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
+                        <a href="https://www.tiktok.com/@tmgrafix?r=1& t=ZS-93Vdp8cz4Tw" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
                             <img src="/Asset 6.png" alt="tiktok" class="w-6 h-6">
                         </a>
                         
                         <!-- linkedin -->
-                        <a href="#" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
+                        <a href="https://www.linkedin.com/in/antony-muigai-b67b7629b" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
                             <img src="/Asset 10.png" alt="linkedin" class="w-6 h-6">
                         </a>
                         
                         <!-- twitter -->
-                        <a href="#" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
+                        <a href="https://x.com/antonyKungu10" class="bg-white/10 hover:bg-white/20 rounded-lg p-2 transition-all">
                             <img src="/Asset 12.png" alt="twitter" class="w-6 h-6">
                         </a>
                     </div>
