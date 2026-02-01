@@ -21,11 +21,11 @@
                          <!-- buttons -->
                           <div class="flex items-center justify-center mt-4 gap-4">
                             
-                            <a href="#" class="rounded-full bg-tm-red px-4 py-2 font-medium text-white hover:text-tm-red hover:bg-transparent ring-1 hover:ring-tm-red">
+                            <a href="#design-packages" class="rounded-full bg-tm-red px-4 py-2 font-medium text-white hover:text-tm-red hover:bg-transparent ring-1 hover:ring-tm-red">
                                 View Pricing
                             </a>
 
-                            <a href="#" class="text-tm-red font-medium px-4 py-2 ring-1 rounded-full ring-tm-red hover:text-white hover:bg-tm-red">
+                            <a href="#get-quotation" class="text-tm-red font-medium px-4 py-2 ring-1 rounded-full ring-tm-red hover:text-white hover:bg-tm-red">
                                 Get Quotation
                             </a>
                           </div>
@@ -135,7 +135,7 @@
           </section>
 
           <!-- packages -->
-           <section class="py-4">
+           <section id="design-packages" class="py-4">
             <div class="container mx-auto px-4 bg-tm-red rounded-md p-4">
                 <!-- title -->
                  <div class="flex flex-col text-center">
