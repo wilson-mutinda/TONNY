@@ -203,13 +203,100 @@
            </section>
 
            <!-- packages -->
-            <section></section>
+            <section>
+                <div class="">
+                    <!--  -->
+                </div>
+            </section>
 
             <!-- process -->
-             <section></section>
+             <section class="py-4">
+                <div class="container mx-auto px-4 bg-white rounded-md p-4">
+                    <!-- title -->
+                     <h3 class="text-center text-tm-red text-2xl font-medium">Hot It Works</h3>
+                     <!-- four grids -->
+                      <div class="grid grid-cols-1 md:grid-cols-4 mt-4 gap-4">
+                        <!-- 1 -->
+                         <div class="flex flex-col items-center">
+                            <div class="bg-tm-red rounded-full h-9 w-9 flex items-center justify-center text-white font-semibold">
+                                <p>1</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-semibold">Discovery & Planning</h3>
+                                <p class="text-gray-600 text-sm">We analyze your business, competitors, and goals to create a strategic plan.</p>
+                            </div>
+                         </div>
+                         <!-- 2 -->
+                          <div class="flex flex-col items-center">
+                            <div class="bg-tm-red rounded-full h-9 w-9 flex items-center justify-center text-white font-semibold">
+                                <p>2</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-semibold">Design & Wireframing</h3>
+                                <p class="text-gray-600 text-sm">We create mockups and wireframes for your approval before development.</p>
+                            </div>
+                          </div>
+                          <!-- 3 -->
+                           <div class="flex flex-col items-center">
+                            <div class="bg-tm-red rounded-full h-9 w-9 flex items-center justify-center text-white font-semibold">
+                                <p>3</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="font-semibold">Development & Testing</h3>
+                                <p class="text-gray-600 text-sm">We build your website with clean code and test across all devices.</p>
+                            </div>
+                           </div>
+                           <!-- 4 -->
+                            <div class="flex flex-col items-center">
+                                <div class="bg-tm-red rounded-full h-9 w-9 flex items-center justify-center text-white font-semibold">
+                                    <p>4</p>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="font-semibold">Launch & Support</h3>
+                                    <p class="text-gray-600 text-sm">We deploy your website and provide training plus ongoing maintainance.</p>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+             </section>
 
              <!-- CTA -->
-              <section></section>
+              <section class="py-4">
+                <div class="container mx-auto px-4">
+                    <!-- title -->
+                     <div class="text-center space-y-2">
+                        <h3 class="text-tm-red text-2xl font-medium">Ready to Launch Your Dream Website?</h3>
+                        <p class="text-gray-600 mx-auto max-w-xl">Contact us today for a free consultation. We&apos;ll discuss 
+                            your project and provided a detailed proposal.
+                        </p>
+                     </div>
+
+                     <!-- form -->
+                      <div class="">
+                        <form action="" method="post"></form>
+                      </div>
+
+                     <!-- actions -->
+                      <!-- actions -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 place-items-center mt-8 max-w-5xl mx-auto gap-4">
+                        <!-- call -->
+                        <div class="bg-tm-red rounded-full px-4 py-1 text-white flex items-center justify-center gap-2">
+                            <img src="/phone-solid-full.svg" alt="phone" width="20" class="invert brightness-0">
+                            <span>Call: +254 748 244 583</span>
+                        </div>
+                        <!-- email -->
+                        <div class="bg-tm-red rounded-full px-4 py-1 text-white flex items-center justify-center gap-2">
+                            <img src="/envelope-solid-full.svg" alt="email" width="20" class="invert brightness-0">
+                            <span>Email: tmgrafixlab@gmail.com</span>
+                        </div>
+                        <!-- response -->
+                        <div class="bg-tm-red rounded-full px-4 py-1 text-white flex items-center justify-center gap-2">
+                            <img src="/timing.png" alt="hours" width="20" class="invert brightness-0">
+                            <span>Response: Within 12 hours</span>
+                        </div>                   
+                    </div>
+                </div>
+              </section>
     </div>
 </template>
 
