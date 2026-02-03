@@ -436,6 +436,56 @@
     </div>
 </template>
 
+<script>
+export default {
+    data() {
+        return {
+            socialMediaPosts: [
+                { img: '/Uptrend start mtumba business sm poster.jpg', description: 'Event Promotion' },
+                { img: '/EDENSTREAMS2.png', description: 'Real Estate' },
+                { img: '/KARI GLAMOUR RVSD 2.jpg', description: 'Beauty' },
+                { img: '/Suzuki Jimny.png', description: 'Car/Product Sale production' },
+                { img: '/ART AT SUNSET.png', description: 'Event Promotion' },
+                { img: '/JEFF BIRTHDAY II.png', description: 'Birthday, Wedding, Graduation' }
+            ],
+
+            travelFlyers: [
+                { img: '/Camp Dunda copyxd.jpg', description: 'Summer beach vacation flyer' },
+                { img: '/21 SEPTEMBER NGONG HILLS HIKE and FUN.jpg', description: 'City exploration trip poster' },
+                { img: '/BIT TRIP RVSD.png', description: 'Discounted holiday package' },
+                { img: '/NAMANGA copy34.png', description: 'Mountain adventure campaign' },
+                { img: '/WRC 2025 TWENDE VASHA NA RUBY ADVENTURES.png', description: 'Luxury cruise promotion' },
+                { img: '/VISIT RWANDA REDESIGN BY TMGRAFIXLAB.jpg', description: 'Safari tour special' },
+                { img: '/Ramja safaris2.png', description: 'Weekend gateway deal' },
+                { img: '/PRIME ADVENTURES.jpg', description: 'Winter holiday escape' }
+            ],
+
+            politicalPosters: [
+                { img: '/Artboard 1.png', description: 'Campaign rally poster' },
+                { img: '/Hon George Kibuku Wishes You Happy International youth day.jpg', description: 'Community engagement flyer' },
+                { img: '/MATUNGULU CONSTITUENCY BODABODA  EMPOWERMENT.jpg', description: 'Empowerment' },
+                { img: '/needy2.png', description: 'Policy awareness poster' },
+                { img: '/HON KENRIC MAINA WELCOMING RIGGY G.jpg', description: 'Informative Political posters' },
+                { img: '/Kilome Constituency Bodaboda Empowerment programme my post.jpg', description: 'Youth voter campaign' },
+                { img: '/Hon George-01 (1).jpg', description: 'Creating awareness' },
+                { img: '/Ecogeeks Mashujaa Day copy.png', description: 'Public Holiday' }
+            ],
+
+            generalFlyers: [
+                { img: '/FAIBA MKONONI Final.png', description: 'Informative Flyer' },
+                { img: '/BENTECH.png', description: 'Promotional Flyer' },
+                { img: '/faiba mkononi A5 BACK-04.jpg', description: 'Bronchures' },
+                { img: '/Kari Glamour copyY.png', description: 'Beauty and cosmetics' },
+                { img: '/CROPCARE FLYERDFGH-01.jpg', description: 'Product Promotion' },
+                { img: '/Faibamkononi Home Plan A5-02.jpg', description: 'Local community fair flyer' },
+                { img: '/faiba mkononi flyer with PICTURES-05.jpg', description: 'Startup pitch event flyer' },
+                { img: '/PASSION DRY CLEANERS ORG copy11.png', description: 'Holiday sales promo' }
+            ],
+        }
+    }
+}
+</script>
+
 <style scoped>
 .icon-red {
         filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(5065%) hue-rotate(355deg) brightness(95%) contrast(110%);

@@ -65,18 +65,18 @@
               >
                 Logo Design
               </RouterLink>
-              <RouterLink
+              <!-- <RouterLink
                 to="/services/brand-identity"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 Brand Identity
-              </RouterLink>
-              <RouterLink
+              </RouterLink> -->
+              <!-- <RouterLink
                 to="/services/social-media-design"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 Social Media Design
-              </RouterLink>
+              </RouterLink> -->
               <RouterLink
                 to="/services/flyer-posters"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
@@ -86,12 +86,12 @@
               
               <!-- Marketing & Print -->
               <div class="px-4 py-2 text-xs font-semibold text-tm-red uppercase border-b mt-2">Marketing & Print</div>
-              <RouterLink
+              <!-- <RouterLink
                 to="/services/print-marketing"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 Print Materials
-              </RouterLink>
+              </RouterLink> -->
               <RouterLink
                 to="/services/mockups-presentation"
                 class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
@@ -116,12 +116,12 @@
                 >
                   All Services Overview
                 </RouterLink>
-                <RouterLink
+                <!-- <RouterLink
                   to="/services/pricing"
                   class="block px-4 py-3 text-sm font-semibold text-tm-red hover:bg-gray-100 transition-colors"
                 >
                   View All Packages
-                </RouterLink>
+                </RouterLink> -->
               </div>
             </div>
           </div>
@@ -259,20 +259,20 @@
                 >
                   Logo Design
                 </RouterLink>
-                <RouterLink
+                <!-- <RouterLink
                   to="/services/brand-identity"
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
                   @click="closeAllMenus"
                 >
                   Brand Identity
-                </RouterLink>
-                <RouterLink
+                </RouterLink> -->
+                <!-- <RouterLink
                   to="/services/social-media-design"
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
                   @click="closeAllMenus"
                 >
                   Social Media Design
-                </RouterLink>
+                </RouterLink> -->
                 <RouterLink
                   to="/services/flyer-posters"
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
@@ -283,13 +283,13 @@
                 
                 <!-- Marketing & Print -->
                 <p class="px-4 pt-3 text-white text-xs font-semibold uppercase opacity-75">Marketing & Print</p>
-                <RouterLink
+                <!-- <RouterLink
                   to="/services/print-marketing"
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
                   @click="closeAllMenus"
                 >
                   Print Materials
-                </RouterLink>
+                </RouterLink> -->
                 <RouterLink
                   to="/services/mockups-presentation"
                   class="px-6 py-2 text-white text-sm hover:bg-white/10 rounded transition-colors"
@@ -309,7 +309,7 @@
                 </RouterLink>
                 
                 <!-- Pricing -->
-                <div class="border-t border-white/20 mt-3 pt-3">
+                <!-- <div class="border-t border-white/20 mt-3 pt-3">
                   <RouterLink
                     to="/services/pricing"
                     class="px-4 py-2 text-white text-sm font-semibold hover:bg-white/10 rounded transition-colors"
@@ -317,7 +317,7 @@
                   >
                     Pricing Packages
                   </RouterLink>
-                </div>
+                </div> -->
               </div>
             </div>
 
