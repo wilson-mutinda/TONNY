@@ -20,12 +20,15 @@
                      </div>
                      <!-- action buttons -->
                       <div class="flex items-center justify-center mb-4 gap-4">
-                        <button type="button" class="bg-tm-red px-4 py-2 rounded-full ring-1 ring-tm-red text-white font-medium hover:text-tm-red hover:bg-transparent">
+                        
+                        <a href="#pricing" class="bg-tm-red px-4 py-2 rounded-full ring-1 ring-tm-red text-white font-medium hover:text-tm-red hover:bg-transparent">
                             View Pricing
-                        </button>
-                        <button type="button" class="ring-1 rounded-full px-4 py-2 text-tm-red font-medium ring-tm-red hover:bg-tm-red hover:text-white">
-                            Get Free Consultation
-                        </button>
+                        </a>
+                        
+                        <a href="#quotation" class="ring-1 rounded-full px-4 py-2 text-tm-red font-medium ring-tm-red hover:bg-tm-red hover:text-white">
+                            Get Quotation
+                        </a>
+
                       </div>
                       <!-- actions -->
                        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -203,9 +206,164 @@
            </section>
 
            <!-- packages -->
-            <section>
-                <div class="">
-                    <!--  -->
+            <section id="pricing" class="py-4">
+                <div class="container mx-auto px-4">
+                    <!-- title -->
+                     <div class="text-center space-y-2">
+                        <h3 class="text-tm-red text-2xl font-medium">Web Design Packages</h3>
+                        <p class="text-gray-600 text-sm max-w-xl mx-auto">Choose the perfect package for your business needs. All packages 
+                            include responsive design, SEO setup, and suport.
+                        </p>
+                     </div>
+
+                     <!-- package cards -->
+                      <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-4">
+
+                        <!-- first card -->
+                         <div class="bg-white rounded-md p-4 shadow-md">
+                            <!-- title -->
+                             <div class="space-y-2 mb-2 text-center">
+                                <h3 class="font-semibold text-tm-red">Basic Business Website</h3>
+                                <p class="text-gray-600 text-sm"><span class="font-bold text-tm-red">$500</span> one-time</p>
+                                <p class="text-sm text-gray-600">Perfect for small businesses & startups</p>
+                             </div>
+                             <!-- description -->
+                              <div class="">
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>3-5 page custom website</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Fully Responsive Design</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Basic SEO Setup</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Contact Form Integration</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Social Media Integration</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>3 Rounds of Revisions</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>2-3 Week Delivery</span>
+                                </div>
+                              </div>
+                              <!-- button -->
+                               <div class="mt-2 text-center bg-tm-red text-white rounded-md p-2 font-medium">
+                                <button type="button">
+                                    Choose Basic Package
+                                </button>
+                               </div>
+                         </div>
+
+                         <!-- second card -->
+                          <div class="bg-white rounded-md p-4 shadow-md">
+                            <!-- title -->
+                             <div class="space-y-2 mb-2 text-center">
+                                <h3 class="font-semibold text-tm-red">E-Commerce Website</h3>
+                                <p class="text-gray-600 text-sm"><span class="font-bold text-tm-red">$1,200</span> one-time</p>
+                                <p class="text-sm text-gray-600">Complete online store solution</p>
+                             </div>
+                             <!-- description -->
+                              <div class="">
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Product Catalog (Up to 50 products)</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Secure Payment Gateway</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Shopping Cart & Checkout</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Inventory Management</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Customer Accounts</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Order Tracking System</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Advanced SEO Setup</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>4-6 Week Delivery</span>
+                                </div>
+                              </div>
+                              <!-- button -->
+                               <div class="mt-2 text-center bg-tm-red text-white rounded-md p-2 font-medium">
+                                <button type="button">
+                                    Choose E-Commerce Package
+                                </button>
+                               </div>
+                         </div>
+
+                          <!-- third card -->
+                           <div class="bg-white rounded-md p-4 shadow-md">
+                            <!-- title -->
+                             <div class="space-y-2 mb-2 text-center">
+                                <h3 class="font-semibold text-tm-red">Custom Enterprise</h3>
+                                <p class="text-gray-600 text-sm"><span class="font-bold text-tm-red">$2500+</span> custom quote</p>
+                                <p class="text-sm text-gray-600">For complex & large-scale projects</p>
+                             </div>
+                             <!-- description -->
+                              <div class="">
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>10+ Page Custom Website</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Custom Web Applications</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Admin Dashboard</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>API Integrations</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>User Authentication System</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Advanced Analysis</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="/check(1).png" alt="check" width="30" class="icon-red">
+                                    <span>Custom Timeline</span>
+                                </div>
+                              </div>
+                              <!-- button -->
+                               <div class="mt-2 text-center bg-tm-red text-white rounded-md p-2 font-medium">
+                                <button type="button">
+                                    Request Custom Quote
+                                </button>
+                               </div>
+                         </div>
+                      </div>
                 </div>
             </section>
 
@@ -261,7 +419,7 @@
              </section>
 
              <!-- CTA -->
-              <section class="py-4">
+              <section id="quotation" class="py-4">
                 <div class="container mx-auto px-4">
                     <!-- title -->
                      <div class="text-center space-y-2">
@@ -272,9 +430,81 @@
                      </div>
 
                      <!-- form -->
-                      <div class="">
-                        <form action="" method="post"></form>
-                      </div>
+                       <div class="bg-white w-full mx-auto max-w-2xl mt-4 p-6 rounded-md shadow-sm">
+                        <form action="" method="post" class="space-y-4">
+
+                            <!-- title -->
+                            <h3 class="text-center font-semibold text-tm-red text-xl">
+                            Quick Quote Request
+                            </h3>
+
+                            <!-- name & email -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input
+                                class="w-full rounded-md p-3 outline-none ring-1 ring-gray-300 focus:ring-tm-red"
+                                type="text"
+                                name="name"
+                                placeholder="Your Name"
+                            />
+
+                            <input
+                                class="w-full rounded-md p-3 outline-none ring-1 ring-gray-300 focus:ring-tm-red"
+                                type="email"
+                                name="email"
+                                placeholder="Email Address"
+                            />
+                            </div>
+
+                            <!-- website & quantity -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <select
+                                class="w-full rounded-md p-3 outline-none ring-1 ring-gray-300 focus:ring-tm-red"
+                                name="flyers"
+                            >
+                                <option value="">Select Website Type</option>
+                                <option value="business-promotion">Business Website</option>
+                                <option value="events">E-Commerce Stores</option>
+                                <option value="travel">Portfolio Sites</option>
+                                <option value="political">Landing Pages</option>
+                                <option value="product">Blog Platforms</option>
+                                <option value="real-estate">Service Business</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <select
+                                class="w-full rounded-md p-3 outline-none ring-1 ring-gray-300 focus:ring-tm-red"
+                                name="quantity"
+                            >
+                                <option value="1-3">1-3 Pages</option>
+                                <option value="4-6">4-6 Pages</option>
+                                <option value="7-10">7-10 Pages</option>
+                                <option value="package">Other</option>
+                            </select>
+                            </div>
+
+                            <!-- message -->
+                            <textarea
+                            class="w-full rounded-md p-3 outline-none ring-1 ring-gray-300 focus:ring-tm-red"
+                            rows="4"
+                            name="message"
+                            placeholder="Tell us about your project, target audience, key message, and any specific requirements."
+                            ></textarea>
+
+                            <!-- button -->
+                            <button
+                            type="button"
+                            class="w-full bg-tm-red text-white rounded-md py-3 font-medium transition"
+                            >
+                            Get Free Quote & Consultation
+                            </button>
+
+                            <!-- action note -->
+                            <p class="text-gray-600 text-sm text-center">
+                            We&apos;ll respond with a custom quote within 24 hours
+                            </p>
+
+                        </form>
+                    </div>
 
                      <!-- actions -->
                       <!-- actions -->
