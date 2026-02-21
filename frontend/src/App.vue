@@ -4,6 +4,15 @@ import { RouterView } from 'vue-router'
 
 // Run once when the app mounts
 onMounted(() => {
+
+  // Force page to start on top on reload
+  window.scrollTo({ top: 0, behavior: 'auto'})
+
+  // Disable browser scroll restoration
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'
+  }
+
   // Disable right-click globally
   document.addEventListener('contextmenu', (e) => e.preventDefault())
 
