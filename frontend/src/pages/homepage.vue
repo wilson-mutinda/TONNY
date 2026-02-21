@@ -189,7 +189,7 @@
 
            <!-- About Teaser Section -->
             <section class="py-12">
-                <div class="container mx-auto px-4 bg-gray-200 p-4 rounded-md shadow-md">
+                <div class="container mx-auto px-4 bg-gray-200 p-4 rounded-md shadow-md font-futura">
 
                     <!-- title -->
                      <h4 class="text-tm-red font-medium text-3xl text-center mb-2">Our Creative Journey</h4>

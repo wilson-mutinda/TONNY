@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'ui-sans-serif', 'system-ui']
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+        futura: ['Montserrat', 'sans-serif']
       },
       colors: {
         'tm-gray': '#f1f2f2',
