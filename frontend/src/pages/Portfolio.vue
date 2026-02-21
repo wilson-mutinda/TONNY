@@ -7,7 +7,7 @@
           <Marquee />
 
           <!-- Portfolio Menu -->
-            <div class="fixed top-24 left-0 w-full z-40 bg-white shadow-sm">
+            <div class="fixed py-8 mt-16 pt-12 left-0 w-full z-40 bg-white shadow-sm">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between py-4">
 
