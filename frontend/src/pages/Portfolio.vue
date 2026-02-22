@@ -90,11 +90,11 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in socialMediaPosts" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in socialMediaPosts" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img
                                  :src="img.img" 
                                  :alt="img.description" 
-                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                 class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 hover:text-tm-red font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
@@ -126,11 +126,11 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in travelFlyers" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in travelFlyers" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img 
                                 :src="img.img" 
                                 :alt="img.description" 
-                                class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
@@ -162,11 +162,11 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in politicalPosters" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in politicalPosters" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img
                                  :src="img.img" 
                                  :alt="img.description" 
-                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                 class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
@@ -198,11 +198,11 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in generalFlyers" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in generalFlyers" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img
                                  :src="img.img" 
                                  :alt="img.description" 
-                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                 class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
@@ -234,11 +234,11 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in mockups" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in mockups" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img
                                  :src="img.img" 
                                  :alt="img.description" 
-                                 class="w-full aspect-square object-cover rounded-md ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                 class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
@@ -270,11 +270,11 @@
                             <!-- Images Grid -->
 
                             <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                                <div v-for="(img, index) in logos" class="bg-white shadow-md p-2 rounded-md flex flex-col items-center relative group transition-all duration-300">
+                                <div v-for="(img, index) in logos" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
                                     <img
                                      :src="img.img" 
                                      :alt="img.description" 
-                                     class="w-full max-w-[160px] aspect-square object-contain rounded-md transition-transform duration-300 group-hover:scale-110">
+                                     class="w-full max-w-[160px] aspect-square object-contain transition-transform duration-300 group-hover:scale-110">
                                     <span class="text-gray-700 hover:text-tm-red font-semibold">{{ img.description }}</span>
                                 </div>
                             </div>

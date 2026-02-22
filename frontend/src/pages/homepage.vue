@@ -434,7 +434,7 @@
                         <img src="/phone.png" alt="phone" width="30" class="rounded-full">
                         <div class="">
                           <h3 class="font-semibold">Phone</h3>
-                          <p class="text-gray-700 text-sm">+254 7XX XXX XXX</p>
+                          <p class="text-gray-700 text-sm">+254 748 244 583</p>
                         </div>
                        </div>
 
