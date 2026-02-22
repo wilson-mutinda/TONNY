@@ -130,7 +130,7 @@
                                 <img 
                                 :src="img.img" 
                                 :alt="img.description" 
-                                class="w-full aspect-square object-cover ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
+                                class="w-full aspect-square object-contain ease-out transition-transform duration-300 group-hover:scale-150 group-hover:z-50">
                                 <span class="text-gray-700 font-semibold">{{ img.description }}</span>
                             </div>
                           </div>
