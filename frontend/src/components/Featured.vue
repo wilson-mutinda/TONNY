@@ -3,7 +3,7 @@
         <section class="py-4 mb-4">
             <!-- container -->
              <div class="container mx-auto px-4">
-                <h4 class="font-semibold text-3xl text-center">Recent Projects</h4>
+                <h4 class="font-semibold text-3xl text-center font-futura text-tm-red">Recent Projects</h4>
 
                 <!-- featured images -->
                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">

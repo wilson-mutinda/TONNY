@@ -13,7 +13,7 @@
             <div class="container mx-auto px-4">
               <!-- title -->
                <div class="text-center">
-                <h3 class="text-tm-red font-medium text-3xl mb-3">Our Creative Services</h3>
+                <h3 class="text-tm-red font-medium text-3xl mb-3 font-futura">Our Creative Services</h3>
                 <p class="text-gray-600 text-sm">Comprehensive design solutions tailored to your brand's unique needs</p>
                </div>
 
@@ -243,7 +243,7 @@
               <div class="container mx-auto px-4 bg-white rounded-md p-4">
                 <!-- title -->
                  <div class="text-center">
-                  <h3 class="text-2xl text-tm-red font-medium">Trusted by Visionary Brands</h3>
+                  <h3 class="text-2xl text-tm-red font-medium font-futura">Trusted by Visionary Brands</h3>
                   <p class="text-sm text-gray-600 mt-2">From startups to established enterprises, we deliver designs that make an impact</p>
                  </div>
 
@@ -308,7 +308,7 @@
                 <div class="container mx-auto px-4 bg-white rounded-md p-4">
                   <!-- title -->
                    <div class="text-center">
-                    <h3 class="font-medium text-3xl text-tm-red mb-4">Our Design Process</h3>
+                    <h3 class="font-medium text-3xl text-tm-red mb-4 font-futura">Our Design Process</h3>
                     <p class="text-gray-700 text-sm mb-4">A structured yet flexible approach ensuring your project's success</p>
                    </div>
 
@@ -367,7 +367,7 @@
                     <!-- call to actions -->
                      <div class="bg-tm-red text-white text-center pt-8 pb-8 rounded-b-lg">
                       <div class="">
-                        <h3 class="font-semibold text-3xl mb-2">Ready to Elevate Your Brand?</h3>
+                        <h3 class="font-semibold text-3xl mb-2 font-futura">Ready to Elevate Your Brand?</h3>
                         <p class="text-sm mb-4 text-center w-full max-w-md mx-auto">Let's collaborate to create designs that not only look amazing but 
                           also drive eral results for your business.
                         </p>
