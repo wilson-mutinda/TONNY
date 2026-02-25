@@ -149,8 +149,37 @@
             </div>
           </section>
 
-          <!-- samples -->
-           <section></section>
+          <!-- flyer and poster samples -->
+         <section class="py-4">
+            <div class="container mx-auto px-4 mt-6">
+                <!-- title -->
+                 <div class="flex flex-col text-center mb-6">
+                    <h3 class="text-tm-red text-3xl mb-2">Flyer and Poster Examples</h3>
+                    <p class="text-gray-600">View some of our recent logo designs;</p>
+                 </div>
+
+                 <!-- logo designs -->
+                  <div class="grid grid-cols-1 md:grid-cols-3 place-items-center gap-4">
+                    <div
+                     v-for="(img, index) in visibleFlyers" 
+                     :key="index" 
+                     class="p-4 w-full flex items-center justify-center flex-col space-y-2 shadow-sm hover:shadow-md">
+                        <!-- image wrapper -->
+                         <div class="bg-white w-full flex items-center justify-center">
+                            <img :src="img.img" alt="" class="max-h-full max-w-full object-contain">
+                         </div>
+                        <span class="text-sm text-tm-red mt-3 text-center">{{ img.description }}</span>
+                    </div>
+                  </div>
+
+                  <!-- more button -->
+                   <div class="flex justify-center mt-6">
+                    <button v-if="visibleCount < flyerAndPosters.length" @click="loadMoreFlyers" class="px-6 py-2 bg-tm-red text-white rounded hover:bg-red-700 transition">
+                        View More
+                    </button>
+                   </div>
+            </div>
+         </section>
 
            <!-- packages -->
             <section id="flyer-pricing" class="py-4">
@@ -440,16 +469,10 @@
 export default {
     data() {
         return {
-            socialMediaPosts: [
-                { img: '/Uptrend start mtumba business sm poster.jpg', description: 'Event Promotion' },
-                { img: '/EDENSTREAMS2.png', description: 'Real Estate' },
-                { img: '/KARI GLAMOUR RVSD 2.jpg', description: 'Beauty' },
-                { img: '/Suzuki Jimny.png', description: 'Car/Product Sale production' },
-                { img: '/ART AT SUNSET.png', description: 'Event Promotion' },
-                { img: '/JEFF BIRTHDAY II.png', description: 'Birthday, Wedding, Graduation' }
-            ],
 
-            travelFlyers: [
+            flyerAndPosters: [
+
+                // travel flyers
                 { img: '/Camp Dunda copyxd.jpg', description: 'Summer beach vacation flyer' },
                 { img: '/21 SEPTEMBER NGONG HILLS HIKE and FUN.jpg', description: 'City exploration trip poster' },
                 { img: '/BIT TRIP RVSD.png', description: 'Discounted holiday package' },
@@ -457,10 +480,9 @@ export default {
                 { img: '/WRC 2025 TWENDE VASHA NA RUBY ADVENTURES.png', description: 'Luxury cruise promotion' },
                 { img: '/VISIT RWANDA REDESIGN BY TMGRAFIXLAB.jpg', description: 'Safari tour special' },
                 { img: '/Ramja safaris2.png', description: 'Weekend gateway deal' },
-                { img: '/PRIME ADVENTURES.jpg', description: 'Winter holiday escape' }
-            ],
+                { img: '/PRIME ADVENTURES.jpg', description: 'Winter holiday escape' },
 
-            politicalPosters: [
+                // political posters
                 { img: '/Artboard 1.png', description: 'Campaign rally poster' },
                 { img: '/Hon George Kibuku Wishes You Happy International youth day.jpg', description: 'Community engagement flyer' },
                 { img: '/MATUNGULU CONSTITUENCY BODABODA  EMPOWERMENT.jpg', description: 'Empowerment' },
@@ -468,10 +490,9 @@ export default {
                 { img: '/HON KENRIC MAINA WELCOMING RIGGY G.jpg', description: 'Informative Political posters' },
                 { img: '/Kilome Constituency Bodaboda Empowerment programme my post.jpg', description: 'Youth voter campaign' },
                 { img: '/Hon George-01 (1).jpg', description: 'Creating awareness' },
-                { img: '/Ecogeeks Mashujaa Day copy.png', description: 'Public Holiday' }
-            ],
+                { img: '/Ecogeeks Mashujaa Day copy.png', description: 'Public Holiday' },
 
-            generalFlyers: [
+                // general flyers
                 { img: '/FAIBA MKONONI Final.png', description: 'Informative Flyer' },
                 { img: '/BENTECH.png', description: 'Promotional Flyer' },
                 { img: '/faiba mkononi A5 BACK-04.jpg', description: 'Bronchures' },
@@ -479,8 +500,23 @@ export default {
                 { img: '/CROPCARE FLYERDFGH-01.jpg', description: 'Product Promotion' },
                 { img: '/Faibamkononi Home Plan A5-02.jpg', description: 'Local community fair flyer' },
                 { img: '/faiba mkononi flyer with PICTURES-05.jpg', description: 'Startup pitch event flyer' },
-                { img: '/PASSION DRY CLEANERS ORG copy11.png', description: 'Holiday sales promo' }
+                { img: '/PASSION DRY CLEANERS ORG copy11.png', description: 'Holiday sales promo' },
+
             ],
+
+            visibleCount: 3
+        }
+    },
+
+    computed: {
+        visibleFlyers() {
+            return this.flyerAndPosters.slice(0, this.visibleCount)
+        }
+    },
+
+    methods: {
+        loadMoreFlyers() {
+            this.visibleCount += 3
         }
     }
 }
