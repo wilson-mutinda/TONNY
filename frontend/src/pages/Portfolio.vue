@@ -126,7 +126,7 @@
                          <!-- Images Grid -->
 
                           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-4 overflow-visible">
-                            <div v-for="(img, index) in travelFlyers" class="bg-white shadow-md p-2 flex flex-col items-center relative group transition-all duration-300">
+                            <div v-for="(img, index) in travelFlyers" class="p-2 flex flex-col items-center relative group transition-all duration-300">
                                 <img 
                                 :src="img.img" 
                                 :alt="img.description" 
