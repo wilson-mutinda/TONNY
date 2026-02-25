@@ -1,88 +1,162 @@
 <template>
-    <div class="">
-        <!-- Hero section -->
-            <section class="mb-4 py-20 pt-24">
-            <div class="px-4 mx-auto">
-                <div class="relative w-full h-[650px] overflow-hidden rounded-lg">
+  <div>
 
-                <img
-                    src="/Background 1.jpg"
-                    alt="img1"
-                    class="absolute inset-0 w-full h-full object-cover hero-slide slide-1"
-                />
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative w-full h-[650px] overflow-hidden">
 
-                <img
-                    src="/Background 2.jpg"
-                    alt="img2"
-                    class="absolute inset-0 w-full h-full object-cover hero-slide slide-2"
-                />
+          <!-- Background -->
+          <img
+            src="/Background 3.jpg"
+            alt="hero"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
 
-                <img
-                    src="/Background 3.jpg"
-                    alt="img3"
-                    class="absolute inset-0 w-full h-full object-cover hero-slide slide-3"
-                />
+          <!-- Dark Overlay -->
+          <div class="absolute inset-0 bg-black/70"></div>
 
-                <!-- dark overlay -->
-                 <div class=""></div>
+          <!-- CENTER CONTENT WRAPPER -->
+          <div class="absolute inset-0 flex flex-col items-center justify-center z-10 space-y-12">
 
-                 <!-- welcome content -->
-                  <div class="absolute inset-0 flex items-center justify-center text-center px-4">
-                    <div class="max-w-sm bg-black rounded-md bg-opacity-50 p-4">
-                        <h3 class="text-white text-xl font-semibold mb-3">Hi, Welcome to <span class="text-tm-red">TMGRAFIXLAB</span></h3>
+            <!-- Marquee -->
+            <div class="relative w-full overflow-hidden group">
 
-                        <p class="text-white text-sm mb-4">A passionate graphic design company creating logos, flyers, posters, and more.</p>
+              <div class="flex animate-marquee group-hover:[animation-play-state:paused]">
 
-                        <!-- <button type="button" class="bg-tm-red hover:bg-red-700 transition px-6 py-3 rounded-md text-white">
-                            View My Work
-                        </button> -->
-                        <RouterLink to="/portfolio" class="bg-tm-red hover:bg-red-700 transition px-4 py-2 rounded-full text-white">View My Work</RouterLink>
-                    </div>
+                <!-- FIRST SET -->
+                <div class="flex gap-6 min-w-max px-6">
+                  <div class="service-card">
+                    <h3>Branding & Identity</h3>
+                    <p>Logos, brand systems, strategy & guidelines</p>
                   </div>
 
+                  <div class="service-card">
+                    <h3>Graphic & Digital Design</h3>
+                    <p>Social media, UI, ads, presentations</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Print & Offline Design</h3>
+                    <p>Business cards, brochures, posters</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Copywriting & Content</h3>
+                    <p>Website copy, blogs, captions</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>UX / Digital Strategy</h3>
+                    <p>Wireframes, UI systems, landing pages</p>
+                  </div>
                 </div>
+
+                <!-- DUPLICATE -->
+                <div class="flex gap-6 min-w-max px-6">
+                  <div class="service-card">
+                    <h3>Branding & Identity</h3>
+                    <p>Logos, brand systems, strategy & guidelines</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Graphic & Digital Design</h3>
+                    <p>Social media, UI, ads, presentations</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Print & Offline Design</h3>
+                    <p>Business cards, brochures, posters</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>Copywriting & Content</h3>
+                    <p>Website copy, blogs, captions</p>
+                  </div>
+
+                  <div class="service-card">
+                    <h3>UX / Digital Strategy</h3>
+                    <p>Wireframes, UI systems, landing pages</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            </section>
-    </div>
+
+            <!-- VIEW WORK BUTTON -->
+            <RouterLink
+              to="/portfolio"
+              class="bg-tm-red hover:bg-red-700 transition px-8 py-3 rounded-full text-white font-semibold shadow-lg"
+            >
+              View Our Work
+            </RouterLink>
+
+          </div>
+    </section>
+
+  </div>
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router';
-
-    export default {}
+import { RouterLink } from 'vue-router'
+export default {}
 </script>
 
 <style scoped>
-.hero-slide {
-  opacity: 0;
-  animation: fadeSlide 9s infinite;
+
+/* ===== Marquee Animation ===== */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
 }
 
-.slide-1 {
-  animation-delay: 0s;
-}
-.slide-2 {
-  animation-delay: 3s;
-}
-.slide-3 {
-  animation-delay: 6s;
+/* Default (Desktop) */
+.animate-marquee {
+  animation: marquee 15s linear infinite;
 }
 
-@keyframes fadeSlide {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+/* Medium screens */
+@media (max-width: 1024px) {
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
   }
 }
+
+/* Small screens */
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation: marquee 5s linear infinite;
+  }
+}
+
+/* ===== Service Card Styling ===== */
+.service-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .service-card {
+    width: 260px;
+  }
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  font-weight: 600;
+  color: #d62828;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
 </style>
