@@ -143,7 +143,7 @@
                  </div>
 
                  <!-- packages -->
-                  <div class="flex items-center justify-center gap-8 flex-col md:flex-row">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md md:max-w-4xl mx-auto">
                     <!-- basic logo -->
                      <div class="bg-white p-4 rounded-md shadow-md">
                         <div class="text-center">
