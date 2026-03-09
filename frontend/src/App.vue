@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
+import WhatsappButton from './components/WhatsappButton.vue'
 
 // Run once when the app mounts
 onMounted(() => {
@@ -33,4 +34,5 @@ onMounted(() => {
 
 <template>
   <RouterView />
+  <WhatsappButton />
 </template>
