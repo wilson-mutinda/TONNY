@@ -8,231 +8,238 @@
          <!-- Hero section -->
           <HeroSection />
 
-          <!-- creative services -->
-           <section class="py-8">
-            <div class="container mx-auto px-4">
-              <!-- title -->
-               <div class="text-center">
-                <h3 class="text-tm-red font-medium text-3xl mb-3 font-futura">Our Creative Services</h3>
-                <p class="text-gray-600 text-sm">Comprehensive design solutions tailored to your brand's unique needs</p>
-               </div>
+         <section class="py-16 bg-[#F9FAFB]">
+            <div class="container mx-auto px-6">
 
-               <!-- 3 divs -->
-                <div class="grid grid-cols-1 md:grid-cols-3 mt-5 gap-4">
+              <!-- TITLE -->
+              <div 
+                class="text-center mb-12"
+                data-aos="fade-up"
+              >
+                <h3 class="text-4xl font-bold text-tm-red mb-3 font-futura">
+                  Our Creative Services
+                </h3>
+                <p class="text-gray-500 max-w-xl mx-auto">
+                  Powerful design solutions crafted to elevate your brand and drive real results.
+                </p>
+              </div>
 
-                  <!-- Brand identity -->
-                   <div class="bg-white rounded-md p-4 shadow-md">
-                    <img src="/diamond.png" alt="diamond" width="30" class="icon-red mb-2">
-                    <h3 class="font-semibold text-tm-red mb-2">Branding & Identity Design</h3>
-                    <p class="text-gray-600 text-sm mb-2 max-w-sm">Complete brand systems including logos, style guides, and brand strategy</p>
+              <!-- GRID -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <div class="">
-                      <div class="flex gap-1 items-center">
-                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Logo Design & Redesign</span>
-                      </div>
-                      <div class="flex gap-1 items-center">
-                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Brand Identity Systems (colors, typography, icons, patterns)</span>
-                      </div>
-                      <div class="flex gap-1 items-center">
-                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Brand Style Guides & Guidelines</span>
-                      </div>
-                      <div class="flex gap-1 items-center">
-                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Brand Strategy Consultation</span>
-                      </div>
-                      <div class="flex gap-1 items-center">
-                        <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                        <span class="text-gray-600 text-sm">Visual Brand Audit (evaluating existing brand visuals)</span>
-                      </div>
-                    </div>
-                   </div>
+                <!-- CARD -->
+                <div 
+                  class="service-card group"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <img src="/diamond.png" class="icon-red mb-4 w-10 transition-transform group-hover:scale-110">
 
-                   <!-- Digital design -->
-                    <div class="bg-white rounded-md p-4 shadow-md">
-                      <img src="/monitor.png" alt="monitor" width="30" class="icon-red mb-2">
-                      <h3 class="font-semibold text-tm-red mb-2">Graphic & Digital Design</h3>
-                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Engaging digital experience for web and mobile platforms.</p>
+                  <h3 class="card-title">
+                    Branding & Identity
+                  </h3>
 
-                      <div class="">
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Social Media Graphics & Templates (Instagram, LinkedIn, TikTok, etc)</span>
-                        </div>
+                  <p class="card-desc">
+                    Build a strong and memorable brand presence.
+                  </p>
 
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Digital ads & Banners</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Website Graphics & UI Elements</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Presentation Design (pitch decks, corporate slides)</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Infographics & Data Visualization</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Packaging & Label Design</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Tour & Travel Designs</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Political Designs</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Print and marketting -->
-                     <div class="bg-white rounded-md p-4 shadow-md">
-                      <img src="/printer.png" alt="printer" class="icon-red mb-2" width="30">
-                      <h3 class="font-semibold text-tm-red mb-2">Print & Offline Design</h3>
-                      <p class="text-gray-600 text-sm mb-2 max-w-sm">Even in digital age, print still matters for premium brands:</p>
-
-                      <div class="">
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Business Cards & Stationary</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Bronchures, Flyers & Posters</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Event & Trade Show Materials</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Booklets & Catalogs</span>
-                        </div>
-                        <div class="flex gap-1 items-center">
-                          <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                          <span class="text-gray-600 text-sm">Merchandise & Apparel Design</span>
-                        </div>
-                      </div>
-                     </div>
-
-                     <!-- Copywriting & Content Services -->
-                      <div class="bg-white rounded-md p-4 shadow-md">
-                        <img src="/copywriting.png" alt="printer" class="icon-red mb-2" width="30">
-                        <h3 class="font-semibold text-tm-red mb-2">Copywriting & Content Services</h3>
-                        <p class="text-gray-600 text-sm mb-2 max-w-sm">This is your value add design + words = full brand massaging:</p>
-
-                        <div class="">
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Taglines & Brand Slogans</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Website Copy (home, about, service pages)</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Blog Content creation (short posts, design tips, case studies)</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Social Media Captions & Content Calendars</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Email Newsletter Copy</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Product Descriptions (for e-commerce or portfolios)</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- UX / Digital Strategy -->
-                       <div class="bg-white rounded-md p-4 shadow-md">
-                        <img src="/ui.png" alt="printer" class="icon-red mb-2" width="30">
-                        <h3 class="font-semibold text-tm-red mb-2">UX / Digital Strategy (Optional Premium Services)</h3>
-                        <p class="text-gray-600 text-sm mb-2 max-w-sm">If you want to offer higher-value packages:</p>
-
-                        <div class="">
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Website Wireframes & Mockups</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">User Interface Design for Web or Apps</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">User Experience Audits & Consultation</span>
-                          </div>
-                          <div class="flex gap-1 items-center">
-                            <img src="/check(1).png" alt="check" width="20" class="icon-red">
-                            <span class="text-gray-600 text-sm">Conversion-focused Landing Page Design</span>
-                          </div>
-                        </div>
-                      </div>
-
+                  <!-- HIDDEN DETAILS -->
+                  <div class="card-details">
+                    <p>✔ Logo Design</p>
+                    <p>✔ Brand Systems</p>
+                    <p>✔ Style Guides</p>
+                    <p>✔ Brand Strategy</p>
+                  </div>
                 </div>
+
+                <!-- CARD -->
+                <div 
+                  class="service-card group"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <img src="/monitor.png" class="icon-red mb-4 w-10 transition-transform group-hover:scale-110">
+
+                  <h3 class="card-title">
+                    Graphic & Digital Design
+                  </h3>
+
+                  <p class="card-desc">
+                    Stunning visuals for digital platforms.
+                  </p>
+
+                  <div class="card-details">
+                    <p>✔ Social Media Graphics</p>
+                    <p>✔ Ads & Banners</p>
+                    <p>✔ UI Elements</p>
+                    <p>✔ Presentations</p>
+                  </div>
+                </div>
+
+                <!-- CARD -->
+                <div 
+                  class="service-card group"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <img src="/printer.png" class="icon-red mb-4 w-10 transition-transform group-hover:scale-110">
+
+                  <h3 class="card-title">
+                    Print Design
+                  </h3>
+
+                  <p class="card-desc">
+                    Premium print materials that stand out.
+                  </p>
+
+                  <div class="card-details">
+                    <p>✔ Business Cards</p>
+                    <p>✔ Flyers & Posters</p>
+                    <p>✔ Brochures</p>
+                    <p>✔ Merchandise</p>
+                  </div>
+                </div>
+
+                <!-- CARD -->
+                <div 
+                  class="service-card group"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <img src="/copywriting.png" class="icon-red mb-4 w-10">
+
+                  <h3 class="card-title">
+                    Copywriting
+                  </h3>
+
+                  <p class="card-desc">
+                    Words that sell and connect with your audience.
+                  </p>
+
+                  <div class="card-details">
+                    <p>✔ Website Copy</p>
+                    <p>✔ Blog Writing</p>
+                    <p>✔ Social Media</p>
+                    <p>✔ Email Campaigns</p>
+                  </div>
+                </div>
+
+                <!-- CARD -->
+                <div 
+                  class="service-card group"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <img src="/ui.png" class="icon-red mb-4 w-10">
+
+                  <h3 class="card-title">
+                    UX / Strategy
+                  </h3>
+
+                  <p class="card-desc">
+                    Data-driven design for better conversions.
+                  </p>
+
+                  <div class="card-details">
+                    <p>✔ Wireframes</p>
+                    <p>✔ UI Design</p>
+                    <p>✔ UX Audits</p>
+                    <p>✔ Landing Pages</p>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
-           </section>
+          </section>
 
-           <!-- About Teaser Section -->
-            <section class="py-12">
-                <div class="container mx-auto px-4 bg-gray-200 p-4 rounded-md shadow-md font-futura">
+           <section class="py-16 bg-gradient-to-br from-gray-100 via-white to-gray-200">
+              <div class="container mx-auto px-6">
 
-                    <!-- title -->
-                     <h4 class="text-tm-red font-medium text-3xl text-center mb-2">Our Creative Journey</h4>
-                     <p class="text-gray-500 text-center max-w-xl mx-auto mb-4">TMGrafixLab is a Nairobi-based
-                       creative studio where passion meets innovation. Ideas are transformed into memorable visual experiences.</p>
+                <!-- TITLE -->
+                <div 
+                  class="text-center mb-12"
+                  data-aos="fade-up"
+                >
+                  <h4 class="text-tm-red font-bold text-4xl mb-3 font-futura">
+                    Our Creative Journey
+                  </h4>
 
-                     <!-- mission, values, services -->
-                      <div class="flex flex-col md:flex-row gap-4">
-
-                        <!-- mission div -->
-                         <div class="flex flex-col items-center bg-white rounded-md p-4 space-y-2 shadow-md">
-                            <img src="/electricity.png" alt="mission" width="30" class="icon-red">
-                            <h3 class="text-center font-semibold text-xl">Mission</h3>
-                            <p class="text-center text-sm text-gray-700">Create bold designs that help brands stand out and connect with audiences.</p>
-                         </div>
-
-                         <!-- core values div -->
-                          <div class="flex flex-col items-center bg-white rounded-md p-4 space-y-2">
-                            <img src="/check-mark(1).png" alt="values" width="30" class="icon-red">
-                            <h3 class="text-center font-semibold text-xl">Core Values</h3>
-                            <p class="text-center text-sm text-gray-700">Creativity, Quality, Integrity, and Innovation drive everything we do.</p>
-                          </div>
-
-                          <!-- services div -->
-                           <div class="flex flex-col items-center bg-white rounded-md p-4 space-y-2">
-                            <img src="/briefcase.png" alt="services" width="30" class="icon-red">
-                            <h3 class="text-center font-semibold text-xl">Our Services</h3>
-                            <p class="text-center text-sm text-gray-700">Logo design, branding, social media graphics, and more creative solutions.</p>
-                           </div>
-                      </div>
-
-                      <!-- button -->
-                       <div class="text-center mt-3">
-                        <!-- button -->
-                        <button @click="openAboutPage" class="bg-tm-red p-2 rounded-full text-white font-medium">
-                            Discover Full Story
-                            <!-- <img src="/right-up.png" alt="up" width="20"> -->
-                        </button>
-
-                         <!-- desc -->
-                          <p class="text-gray-600 text-sm mt-2">Learn about design philosophy process, and creative team</p>
-                       </div>
+                  <p class="text-gray-600 max-w-2xl mx-auto">
+                    TMGrafixLab is a Nairobi-based creative studio where passion meets innovation. 
+                    We transform ideas into powerful visual experiences that leave lasting impressions.
+                  </p>
                 </div>
+
+                <!-- CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                  <!-- MISSION -->
+                  <div 
+                    class="about-card group"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <img src="/electricity.png" class="icon-red w-10 mb-4 transition group-hover:scale-110">
+
+                    <h3 class="card-title">Our Mission</h3>
+
+                    <p class="card-desc">
+                      Create bold, meaningful designs that help brands stand out and connect deeply with their audience.
+                    </p>
+                  </div>
+
+                  <!-- VALUES -->
+                  <div 
+                    class="about-card group"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <img src="/check-mark(1).png" class="icon-red w-10 mb-4 transition group-hover:scale-110">
+
+                    <h3 class="card-title">Core Values</h3>
+
+                    <p class="card-desc">
+                      Creativity, quality, integrity, and innovation drive every project we deliver.
+                    </p>
+                  </div>
+
+                  <!-- SERVICES -->
+                  <div 
+                    class="about-card group"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <img src="/briefcase.png" class="icon-red w-10 mb-4 transition group-hover:scale-110">
+
+                    <h3 class="card-title">What We Do</h3>
+
+                    <p class="card-desc">
+                      Branding, digital design, social media creatives, and full visual identity systems.
+                    </p>
+                  </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div 
+                  class="text-center mt-12"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <button 
+                    @click="openAboutPage"
+                    class="bg-tm-red hover:bg-red-700 transition px-8 py-3 rounded-full text-white font-semibold shadow-lg"
+                  >
+                    Discover Full Story →
+                  </button>
+
+                  <p class="text-gray-500 text-sm mt-3">
+                    Learn about our process, philosophy, and creative team
+                  </p>
+                </div>
+
+              </div>
             </section>
 
            <!-- Featured setion -->
@@ -304,19 +311,19 @@
              </section>
 
              <!-- Design Process -->
-              <section class="py-8">
-                <div class="container mx-auto px-4 bg-white rounded-md p-4">
+              <!-- <section class="py-8">
+                <div class="container mx-auto px-4 bg-white rounded-md p-4"> -->
                   <!-- title -->
-                   <div class="text-center">
+                   <!-- <div class="text-center">
                     <h3 class="font-medium text-3xl text-tm-red mb-4 font-futura">Our Design Process</h3>
                     <p class="text-gray-700 text-sm mb-4">A structured yet flexible approach ensuring your project's success</p>
-                   </div>
+                   </div> -->
 
                    <!-- design grids -->
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                    <!-- <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4"> -->
 
                       <!-- Discovery -->
-                       <div class="flex flex-col items-center text-center shadow-md p-4">
+                       <!-- <div class="flex flex-col items-center text-center shadow-md p-4">
                         <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
                           <h3 class="">1</h3>
                         </div>
@@ -325,10 +332,10 @@
                           <h4 class="font-semibold mb-2">Discovery</h4>
                           <p class="text-gray-700 text-sm">Deep dive into your brand goals, and target audience</p>
                         </div>
-                       </div>
+                       </div> -->
 
                        <!-- Strategy -->
-                        <div class="flex flex-col items-center text-center shadow-md p-4">
+                        <!-- <div class="flex flex-col items-center text-center shadow-md p-4">
                           <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
                             <h3>2</h3>
                           </div>
@@ -337,10 +344,10 @@
                             <h4 class="font-semibold mb-2">Strategy</h4>
                             <p class="text-gray-700 text-sm">Develop creative direction and project roadmap</p>
                           </div>
-                        </div>
+                        </div> -->
 
                         <!-- Design -->
-                         <div class="flex flex-col items-center text-center shadow-md p-4">
+                         <!-- <div class="flex flex-col items-center text-center shadow-md p-4">
                           <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
                             <h3>3</h3>
                           </div>
@@ -349,10 +356,10 @@
                             <h4 class="font-semibold mb-2">Design</h4>
                             <p class="text-gray-700 text-sm">Create, refine, and perfect visual solutions</p>
                           </div>
-                         </div>
+                         </div> -->
 
                          <!-- Delivery -->
-                          <div class="flex flex-col items-center text-center shadow-md p-4">
+                          <!-- <div class="flex flex-col items-center text-center shadow-md p-4">
                             <div class="bg-tm-red rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mb-2">
                               <h3>4</h3>
                             </div>
@@ -361,46 +368,46 @@
                               <h4 class="font-semibold mb-2">Delivery</h4>
                               <p class="text-gray-700 text-sm">Finalize and provide all assets and guidelines</p>
                             </div>
-                          </div>
-                    </div>
+                          </div> -->
+                    <!-- </div> -->
 
                     <!-- call to actions -->
-                     <div class="bg-tm-red text-white text-center pt-8 pb-8 rounded-b-lg">
+                     <!-- <div class="bg-tm-red text-white text-center pt-8 pb-8 rounded-b-lg">
                       <div class="">
                         <h3 class="font-semibold text-3xl mb-2 font-futura">Ready to Elevate Your Brand?</h3>
                         <p class="text-sm mb-4 text-center w-full max-w-md mx-auto">Let's collaborate to create designs that not only look amazing but 
                           also drive eral results for your business.
                         </p>
-                      </div>
+                      </div> -->
 
                       <!-- buttons -->
-                       <div class="flex items-center justify-center gap-4 mb-4">
+                       <!-- <div class="flex items-center justify-center gap-4 mb-4"> -->
                         <!-- <button type="button" class="rounded-full bg-white px-4 py-2 text-tm-red font-medium hover:text-white hover:border hover:bg-tm-red">
                           Start a Project
                         </button> -->
-                        <RouterLink
+                        <!-- <RouterLink
                          to="/contact-us"
                          class="rounded-full bg-white px-4 py-2 text-tm-red font-medium hover:text-white hover:border hover:bg-tm-red">
                           Start a Project
-                        </RouterLink>
+                        </RouterLink> -->
 
                         <!-- <button type="button" class="rounded-full border border-white px-4 py-2 font-medium hover:bg-white hover:text-tm-red">
                           Book Free Consultation
                         </button> -->
-                        <RouterLink
+                        <!-- <RouterLink
                          to="/"
                          class="rounded-full border border-white px-4 py-2 font-medium hover:bg-white hover:text-tm-red">
                           Book Free Consultation
                         </RouterLink>
-                       </div>
+                       </div> -->
 
                        <!-- desc -->
-                        <h3>Get a response within 24 hours. 
+                        <!-- <h3>Get a response within 24 hours. 
                           No obligation. 100% satisfaction guaranteed
                         </h3>
                      </div>
                 </div>
-              </section>
+              </section> -->
 
             <!-- Contact section -->
              <section class="py-8">
@@ -544,6 +551,77 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <style scoped>
+
+.about-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d62828;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.service-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d62828;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hidden details */
+.card-details {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .card-details {
+  opacity: 1;
+  max-height: 200px;
+}
+
 .hero-slide {
   opacity: 0;
   animation: fadeSlide 9s infinite;

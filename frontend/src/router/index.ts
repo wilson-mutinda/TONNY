@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Homepage from '@/pages/homepage.vue'
-import AdminLayout from '@/pages/AdminLayout.vue'
-import Dashboard from '@/pages/Dashboard.vue'
+// import AdminLayout from '@/pages/AdminLayout.vue'
+// import Dashboard from '@/pages/Dashboard.vue'
 import Portfolio from '@/pages/Portfolio.vue'
 import Contact from '@/pages/Contact.vue'
 import AboutPage from '@/pages/AboutPage.vue'
@@ -17,6 +17,13 @@ import FlyerPosterPage from '@/pages/FlyerPosterPage.vue'
 import PrintMarketingPage from '@/pages/PrintMarketingPage.vue'
 import MockupsPresentationPage from '@/pages/MockupsPresentationPage.vue'
 import WebDesignPage from '@/pages/WebDesignPage.vue'
+import AdminLayout from '@/layouts/AdminLayout.vue'
+import Dashboard from '@/views/admin/Dashboard.vue'
+import Projects from '@/views/admin/Projects.vue'
+import Services from '@/views/admin/Services.vue'
+import Testimonials from '@/views/admin/Testimonials.vue'
+import Messages from '@/views/admin/Messages.vue'
+import Settings from '@/views/admin/Settings.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -70,6 +77,17 @@ const router = createRouter({
         component: WebDesignPage
       }
     ] },
+    {
+      path: '/admin', component: AdminLayout, children: [
+        { path: '', redirect: '/admin/dashboard' },
+        { path: 'dashboard', component: Dashboard },
+        { path: 'projects', component: Projects },
+        { path: 'services', component: Services },
+        { path: 'testimonials', component: Testimonials },
+        { path: 'messages', component: Messages },
+        { path: 'settings', component: Settings },
+      ]
+    }
   ],
 
   // scroll to top

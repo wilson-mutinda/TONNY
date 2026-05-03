@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -13,7 +14,12 @@ export default {
       colors: {
         'tm-gray': '#f1f2f2',
         'tm-red': '#ed1c24',
-        'tm-black': '#231f20'
+        'tm-black': '#231f20',
+
+        // SYSTEM COLORS
+        'tm-surface': '#ffffff',
+        'tm-dark-surface': '#0f2a3a',
+        'tm-dark-bg': '#061c2a'
       }
     },
   },
