@@ -10,6 +10,7 @@ const route = useRoute()
 const links = [
   { name: 'Dashboard', path: '/admin/dashboard', icon: '🏠' },
   { name: 'Projects', path: '/admin/projects', icon: '🖼️' },
+  { name: 'Categories', path: '/admin/categories', icon: '🏷️' },
   { name: 'Services', path: '/admin/services', icon: '🧩' },
   { name: 'Testimonials', path: '/admin/testimonials', icon: '💬' },
   { name: 'Messages', path: '/admin/messages', icon: '📩' },

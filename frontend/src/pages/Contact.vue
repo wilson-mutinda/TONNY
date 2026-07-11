@@ -1,3 +1,83 @@
+<script>
+import apiClient from '@/api/client';
+import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header.vue';
+import Marquee from '@/components/Marquee.vue';
+import router from '@/router';
+
+export default {
+    components: {
+        Header,
+        Footer,
+        Marquee
+    },
+
+    data() {
+        return {
+            // Form data
+            form: {
+                name: '',
+                email: '',
+                phone: '',
+                service_interest: '',
+                message: ''
+            },
+
+            // UI State
+            loading: false,
+            success: false,
+            error: false,
+            isMenuOpen: false
+        }
+    },
+
+    methods: {
+        openFaqs() {
+            router.push('/faqs')
+        },
+
+        async submitForm() {
+            // Reset statuses
+            this.success = false
+            this.error = false
+            this.loading = true
+
+            try {
+                // Use the client with the relative endpoint
+                const res = await apiClient.post('/api/contact/', this.form)
+
+                // If the request succeeds (status 201)
+                this.success = true
+                this.loading = false
+
+                // Clear form fields
+                this.form = {
+                    name: '',
+                    email: '',
+                    phone: '',
+                    service_interest: '',
+                    message: ''
+                }
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    this.success = false
+                }, 5000);
+            } catch (error) {
+                // Handle errors
+                this.error = true
+                this.loading = false
+                console.error('Error submitting enquiry:', error)
+
+                // Hide error message after 5 seconds
+                setTimeout(() => {
+                    this.error = false
+                }, 5000);
+            }
+        }
+    }
+}
+</script>
 
 <template>
     <div class="bg-tm-gray min-h-screen">
@@ -9,7 +89,7 @@
 
          <!-- intro -->
           <section class="py-8 mt-16 pt-12">
-            <div class="container mx-auto px-4">
+            <div data-aos="fade-right" class="container mx-auto px-4">
 
                 <!-- title -->
                  <h3 class="text-center text-3xl font-medium mb-2">Get in Touch</h3>
@@ -58,96 +138,108 @@
                          <h4 class="font-bold text-lg mb-4">Send us a Message</h4>
 
                          <!-- form -->
-                          <form action="">
+                          <form @submit.prevent="submitForm" action="" method="post">
 
                             <!-- name and email -->
                              <div class="flex flex-col md:flex-row mb-4 gap-3">
-
-                                <!-- name -->
-                                 <div class="">
+                                <div class="w-full">
                                     <label class="block text-gray-500 text-sm" for="name">Full Name</label>
                                     <input
+                                     v-model="form.name" 
                                      required 
                                      class="rounded-md border border-gray-400 mt-2 p-2 outline-none w-full" 
-                                     placeholder="John Doe" 
                                      type="text" 
                                      name="name" 
-                                     id="name">
-                                 </div>
+                                     id="name" 
+                                    />
+                                </div>
 
-                                 <!-- email -->
-                                  <div class="">
+                                <div class="w-full">
                                     <label class="block text-sm text-gray-500" for="email">Email Address</label>
                                     <input
+                                     v-model="form.email" 
                                      required 
                                      class="rounded-md border border-gray-400 mt-2 p-2 outline-none w-full" 
                                      type="email" 
                                      name="email" 
-                                     id="email"
-                                     placeholder="john@gmail.com">
-                                  </div>
+                                     id="email" 
+                                     placeholder="john@example.com" 
+                                    />
+                                </div>
                              </div>
 
                              <!-- phone -->
-                                <div class="">
-                                    <div class="flex flex-col">
-                                        <label class="block text-gray-500 text-sm" for="phone">Phone Number</label>
-                                        <input
-                                         required 
-                                         class="rounded-md border border-gray-400 mt-2 p-2 outline-none w-full" 
-                                         type="tel" 
-                                         name="phone" 
-                                         id="phone"
-                                         placeholder="+254 700 000 000">
-                                    </div>
+                              <div class="mb-4">
+                                <div class="flex flex-col">
+                                    <label class="block text-gray-500 text-sm" for="phone">Phone Number</label>
+                                    <input
+                                     v-model="form.phone" 
+                                     class="rounded-md border border-gray-400 mt-2 p-2 outline-none w-full" 
+                                     type="tel" 
+                                     name="phone" 
+                                     id="phone" 
+                                     placeholder="+254 XXX XXX XXX" 
+                                    />
                                 </div>
+                              </div>
 
-                                <!-- design of interest -->
-                                <div class="">
-                                    <div class="flex flex-col">
-                                        <label class="block mt-2 text-sm text-gray-500" for="design">Interest:</label>
-                                        <select
-                                         required 
-                                         class="rounded-md border border-gray-400 mt-2 p-2 outline-none w-full mb-2" 
-                                         name="design" 
-                                         id="design">
-                                            <option value="">Select a Category</option>
-                                            <option value="social-media-posts">Social Media Posts</option>
-                                            <option value="travel-flyers">Travel Flyers</option>
-                                            <option value="political-posters">Political Posters</option>
-                                            <option value="general-flyers">General Flyers</option>
-                                            <option value="mockups">Mockups</option>
-                                            <option value="logos">Logos</option>
-                                        </select>
-                                    </div>
+                              <!-- design of interest -->
+                               <div class="mb-4">
+                                <div class="flex flex-col">
+                                    <label class="block mt-2 text-sm text-gray-500" for="design">Interest:</label>
+                                    <select
+                                     v-model="form.service_interest" 
+                                     required 
+                                     class="rounded-md border border-gray-400 mt-2 p-2" 
+                                     name="design" 
+                                     id="design" 
+                                    >
+                                        <option value="">Select a Category</option>
+                                        <option value="social-media-posts">Social Media Posts</option>
+                                        <option value="travel-flyers">Travel Flyers</option>
+                                        <option value="political-posters">Political Posters</option>
+                                        <option value="general-flyers">General Flyers</option>
+                                        <option value="mockups">Mockups</option>
+                                        <option value="logos">Logos</option>
+                                    </select>
                                 </div>
+                               </div>
 
-                                <!-- message -->
-                                    <div class="">
-                                    <div class="">
+                               <!-- message -->
+                                <div class="mb-4">
+                                    <div class="flex flex-col">
                                         <label class="block text-sm text-gray-500" for="message">Your Message *</label>
                                         <textarea
+                                         v-model="form.message" 
                                          class="w-full border border-gray-400 rounded-md mt-2 mb-2 p-2 outline-none" 
                                          name="message" 
                                          id="message" 
                                          rows="5" 
                                          required 
-                                         placeholder="Tell us about your interest..."></textarea>
+                                         placeholder="Tell us about your interest..."
+                                        ></textarea>
                                     </div>
-                                    </div>
+                                </div>
 
-
-                                    <!-- button -->
-                                    <div class="w-full text-center mt-4 mb-4 bg-blue-600 rounded-md p-2 text-white font-semibold">
-                                    <button type="">
-                                        Send Message
+                                <!-- submit button -->
+                                 <div class="w-full text-center mt-4 mb-4 bg-tm-red rounded-md p-2 text-white font-semibold hover:bg-red-700 transition">
+                                    <button type="submit" :disabled="loading">
+                                        {{loading ? 'Sending...' : 'Send Message' }}
                                     </button>
-                                    </div>
+                                 </div>
 
-                                    <!-- response -->
-                                    <div class="w-full text-center text-gray-500 text-sm">
+                                 <!-- Success / Error messages -->
+                                  <div v-if="success" class="w-full text-center text-green-600 bg-green-100 p-2 rounded-md text-sm">
+                                    ✅  Your message has been sent. We'll get back to you soon.
+                                  </div>
+                                  <div v-if="error" class="w-full text-center text-red-600 bg-red-100 p-2 rounded-md text-sm">
+                                    X Something went wrong. Please try again later.
+                                  </div>
+
+                                  <!-- Response note -->
+                                   <div class="w-full text-center text-gray-500 text-sm mt-2">
                                     <p>Responding within 24 hours during business days.</p>
-                                    </div>
+                                   </div>
                           </form>
                       </div>
                       
@@ -221,30 +313,3 @@
           <Footer />
     </div>
 </template>
-
-<script>
-import Footer from '@/components/Footer.vue';
-import Header from '@/components/Header.vue';
-import Marquee from '@/components/Marquee.vue';
-import router from '@/router';
-
-    export default {
-
-        components: {
-            Header, 
-            Footer,
-            Marquee
-        },
-
-        data() {
-            return {
-            }
-        },
-
-        methods: {
-            openFaqs() {
-                router.push('/faqs')
-            }
-        }
-    }
-</script>

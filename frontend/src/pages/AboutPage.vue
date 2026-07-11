@@ -1,245 +1,714 @@
 <template>
-    <div class="bg-tm-gray min-h-screen">
+  <div class="bg-tm-gray min-h-screen overflow-hidden">
 
-        <!-- header -->
-         <Header />
+    <!-- HEADER -->
+    <Header />
 
-         <!-- marquee -->
-          <Marquee />
+    <!-- MARQUEE -->
+    <Marquee />
 
-         <!-- intro -->
-          <section class="py-8 mt-16 pt-12">
-            <div class="container px-4 mx-auto">
-                <!-- title -->
-                 <h3 class="text-center text-2xl font-semibold mb-2">Crafting Visual Stories That Connect & Convert</h3>
+    <!-- HERO -->
+    <section
+      class="relative pt-36 pb-24 overflow-hidden"
+    >
 
-                 <!-- desc -->
-                 <p class="text-center text-gray-600 max-w-xl mx-auto">Nairobi's creative design studio driven by passion, innovation, and measurable results</p>
+      <!-- BACKGROUND -->
+      <div
+        class="absolute inset-0
+               bg-gradient-to-br
+               from-gray-100
+               via-white
+               to-gray-200"
+      />
+
+      <!-- DECOR -->
+      <div
+        class="absolute -top-20 -left-20
+               w-72 h-72 bg-red-100
+               rounded-full blur-3xl opacity-40"
+      />
+
+      <div
+        class="absolute bottom-0 right-0
+               w-96 h-96 bg-gray-300
+               rounded-full blur-3xl opacity-20"
+      />
+
+      <div
+        class="container mx-auto px-6
+               relative z-10"
+      >
+
+        <div
+          class="max-w-4xl mx-auto text-center"
+          data-aos="fade-up"
+        >
+
+          <span
+            class="inline-block px-5 py-2
+                   rounded-full bg-white
+                   shadow-md text-sm
+                   font-medium text-tm-red mb-6"
+          >
+
+            Nairobi&apos;s Creative Design Studio
+
+          </span>
+
+          <h1
+            class="text-5xl md:text-6xl
+                   font-black leading-tight
+                   text-gray-900 font-futura"
+          >
+
+            Crafting Visual Stories
+            That Connect &
+            Convert
+
+          </h1>
+
+          <p
+            class="text-gray-600
+                   text-lg mt-6
+                   max-w-2xl mx-auto"
+          >
+
+            TMGrafixLab blends creativity,
+            strategy and modern visual
+            storytelling to build memorable
+            brands that drive real business impact.
+
+          </p>
+
+          <!-- BUTTONS -->
+          <div
+            class="flex flex-col sm:flex-row
+                   justify-center gap-4 mt-10"
+          >
+
+            <button 
+              @click="openPortfolioPage"
+              class="bg-tm-red text-white
+                     px-8 py-4 rounded-full
+                     shadow-xl hover:scale-105
+                     transition"
+            >
+
+              Explore Our Work
+
+            </button>
+
+            <button
+              class="bg-white border
+                     border-gray-300
+                     px-8 py-4 rounded-full
+                     hover:bg-gray-50
+                     transition"
+            >
+
+              Our Creative Journey
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="py-20">
+
+      <div class="container mx-auto px-6">
+
+        <div
+          class="grid grid-cols-1
+                 lg:grid-cols-2
+                 gap-12 items-center"
+        >
+
+          <!-- LEFT -->
+          <div
+            data-aos="fade-right"
+          >
+
+            <span class="section-badge">
+              Our Story
+            </span>
+
+            <h2 class="section-title mt-5">
+              From Vision To
+              Visual Impact
+            </h2>
+
+            <p class="section-desc mt-6">
+
+              TMGrafixLab was born from a
+              simple yet powerful vision:
+              bridging business goals
+              with visual storytelling.
+
+            </p>
+
+            <p class="section-desc mt-5">
+
+              What started as a passion
+              for bold typography and
+              minimalist branding evolved
+              into a modern Nairobi-based
+              creative studio helping
+              brands communicate with
+              confidence and clarity.
+
+            </p>
+
+            <p class="section-desc mt-5">
+
+              Today, we combine
+              aesthetics with strategic
+              thinking to create designs
+              that not only look
+              exceptional but also drive
+              measurable results.
+
+            </p>
+
+          </div>
+
+          <!-- RIGHT -->
+          <div
+            class="relative"
+            data-aos="fade-left"
+          >
+
+            <div
+              class="glass-card p-10"
+            >
+
+              <img
+                src="/TM LOGO2.png"
+                class="w-full object-contain
+                       hover:scale-105
+                       transition duration-500"
+              >
+
             </div>
-          </section>
 
-          <!-- about -->
-           <section class="py-4">
-            <div class="container px-4 mx-auto flex flex-col md:flex-row gap-4 bg-white rounded-md p-8 shadow-lg hover:shadow-sm">
-                <!-- left section -->
-                 <div class="w-full md:w-1/2">
-                    <!-- title -->
-                     <h3 class="text-center text-xl font-semibold">From Vision to Visual Impact</h3>
+            <!-- FLOAT CARD -->
+            <div
+              class="absolute -bottom-8
+                     -left-6 bg-white
+                     shadow-2xl rounded-3xl
+                     px-6 py-5"
+            >
 
-                     <!-- desc -->
-                      <p class="text-sm mt-2 text-gray-600 text-center max-w-xl mx-auto">TMGrafixLab was born from a simple yet powerful vision: to bridge the gap between 
-                        business goals and visual storytelling. What started as a passionate creative endeavor has evolved into Nairobi&apos;s 
-                        go-to design studio for brands that want to stand out authentically. <br> <br>
+              <h3
+                class="text-3xl font-black
+                       text-tm-red"
+              >
+                5+
+              </h3>
 
-                        The journey began with a deep passion for minimalist branding and bold typography. After years of helping businesses across Kenya 
-                        transform their visual identities, I realized that many companies had great stories but lacked the visual language to tell them effectively. <br><br>
+              <p class="text-gray-500 text-sm">
+                Years Creative Experience
+              </p>
 
-                        Today, TMGrafixLab is more than a design-studio. Aesthetic excellence combines with strategic thinking 
-                        to create designs that don't just look good but drive real business results for our clients across Kenya and beyond.
-                      </p>
-                 </div>
-
-                 <!-- right section -->
-                  <div class="w-full md:w-1/2 bg-gray-300 rounded-md p-4 flex">
-                    <!-- studio image -->
-                     <div class="rounded-md bg-gray-400 p-4">
-                        <img src="/TM LOGO2.png" alt="logo">
-                     </div>
-                  </div>
             </div>
-           </section>
 
-           <!-- profile -->
-            <section class="py-4">
-                <div class="container w-full mx-auto px-4 max-w-xl mt-4 shadow-md bg-white rounded-md p-4">
-                    <!-- title -->
-                     <h3 class="text-center text-xl font-semibold mb-4">The Mind Behind The Designs</h3>
+          </div>
 
-                     <!-- portfolio  wrapper -->
-                      <div class="flex flex-col md:flex-row text-center items-center gap-4">
-                        <!-- image -->
-                         <div class="shrink-0">
-                            <div class="w-24 h-24 md:w-32 md:h-32 bg-gray-300 rounded-full border-2 border-tm-red mx-auto">
-                                <img src="/user.png" alt="">
-                            </div>
-                         </div>
+        </div>
 
-                         <!-- desc -->
-                          <div class="">
-                            <!-- title -->
-                             <h4 class="font-semibold text-lg mt-4">Antony Muigai</h4>
-                             <p class="font-medium text-tm-red mb-2 mt-2">Founder & Creative Director</p>
+      </div>
 
-                             <p class="text-sm text-gray-700 text-center mb-4">With over 5 years in graphic design and branding, I combine technical expertise with creative vision. Specializing 
-                                in logo design, brand identity, and digital graphics, they've helped numerous businesses establish memorable visual identities.
-                             </p>
+    </section>
 
-                             <div class=" flex gap-2">
-                                <div class="bg-tm-red w-1"></div>
-                                <span class="text-gray-700 text-sm italic">"I believe great design should be both beautiful and purposeful-every pixel 
-                                    should serve a strategic goal for your brand."</span>
-                             </div>
-                          </div>
-                      </div>
-                </div>
-            </section>
+    <!-- FOUNDER -->
+    <section
+      class="py-20
+             bg-gradient-to-br
+             from-white via-gray-50
+             to-gray-100"
+    >
 
-            <!-- design philosophy -->
-             <section class="py-4">
-                <div class="container mx-auto px-4 bg-white shadow-lg p-6 rounded-md">
-                    <!-- title -->
-                     <h3 class="text-center mb-6 font-semibold text-xl">Our Design Philosophy</h3>
+      <div class="container mx-auto px-6">
 
-                     <!-- philosophy wrap -->
-                      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="glass-card max-w-5xl
+                 mx-auto p-10"
+          data-aos="fade-up"
+        >
 
-                        <!-- strategy-first-design -->
-                         <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
-                            <img src="/clipboard.png" alt="clipboard" width="30" class="icon-red">
+          <div
+            class="grid grid-cols-1
+                   md:grid-cols-3
+                   gap-10 items-center"
+          >
 
-                            <!-- title -->
-                            <h3 class="font-medium text-lg mb-2">Strategy-First Design</h3>
-                            <p class="text-sm text-gray-600">Business goals start, not just aesthetics. Every design decision supports your strategic decisions.</p>
-                         </div>
+            <!-- IMAGE -->
+            <div class="text-center">
 
-                         <!-- Authentic Storytelling -->
-                        <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
-                            <img src="/electricity.png" alt="clipboard" width="30" class="icon-red">
+              <div
+                class="w-44 h-44 mx-auto
+                       rounded-full
+                       border-4 border-tm-red
+                       overflow-hidden
+                       shadow-2xl"
+              >
 
-                            <!-- title -->
-                            <h3 class="font-medium text-lg mb-2">Authentic Storytelling</h3>
-                            <p class="text-sm text-gray-600">Your brand&apos;s unique story guides every design decision. We create visuals that authentically represent who you are.</p>
-                        </div>
+                <img
+                  src="/user.png"
+                  class="w-full h-full
+                         object-cover"
+                >
 
-                        <!-- user-centric approach -->
-                         <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
-                            <img src="/padlock.png" alt="clipboard" width="30" class="icon-red">
+              </div>
 
-                            <!-- title -->
-                             <h3 class="font-medium text-lg mb-2">User-Centric Approach</h3>
-                             <p class="text-sm text-gray-600">Designs that resonate your target audience. We consider user experiance in every visual element we create.</p>
-                         </div>
+            </div>
 
-                         <!-- Simplicity with impact -->
-                          <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
-                            <img src="/download(1).png" alt="clipboard" width="30" class="icon-red">
+            <!-- CONTENT -->
+            <div class="md:col-span-2">
 
-                            <!-- title -->
-                             <h3 class="font-medium text-lg mb-2">Simplicity with impact</h3>
-                             <p class="text-sm text-gray-600">Clear, bold visuals that communicate effectively. We believe in minimalism that makes maximum impact.</p>
-                          </div>
+              <span class="section-badge">
+                Founder & Creative Director
+              </span>
 
-                          <!-- Collborative Process -->
-                           <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
-                            <img src="/people.png" alt="clipboard" width="30" class="icon-red">
+              <h2 class="section-title mt-5">
+                Antony Muigai
+              </h2>
 
-                            <!-- title -->
-                             <h3 class="font-medium text-lg mb-2">Collaborative Process</h3>
-                             <p class="text-sm text-gray-600">You're part of the creative journey every step of the way. We value your input and keep communication transparent.</p>
-                           </div>
+              <p class="section-desc mt-6">
 
-                           <!-- Quality Assurance -->
-                            <div class="bg-white shadow-xl rounded-md p-4 border-t-2 border-tm-red">
+                With over 5 years in
+                graphic design and branding,
+                Antony combines technical
+                expertise with creative
+                vision to build memorable
+                visual identities.
 
-                                <img src="/check-mark(2).png" alt="clipboard" width="30" class="icon-red">
+              </p>
 
-                                <!-- title -->
-                                 <h3 class="font-medium text-lg mb-2">Quality Assurance</h3>
-                                 <p class="text-sm text-gray-600">Every design undergoes rigorous quality checks. We deliver pixel-perfect work that meets the higher standards.</p>
-                            </div>
-                      </div>
-                </div>
-             </section>
+              <p class="section-desc mt-5">
 
-             <!-- guiding principles -->
-              <section class="py-4">
-                <div class="container px-4 mx-auto">
-                    <!-- title -->
-                     <h3 class="text-center mb-4 font-semibold text-2xl">Our Guiding Principles</h3>
+                Specializing in branding,
+                typography and digital
+                design systems, he has
+                helped businesses across
+                Kenya establish authentic
+                and impactful brand presence.
 
-                     <!-- principle wrap -->
-                      <div class="">
-                        <!-- left abd right sections -->
-                         <div class="flex flex-col md:flex-row gap-4">
-                            <!-- left section -->
-                             <div class="rounded-md p-4 border-l-4 shadow-md border-tm-red">
-                                <!-- title -->
-                                <h3 class="font-semibold text-lg">Creativity</h3>
-                                <p class="text-sm text-gray-700 mb-2 mt-2">We don&apos;t follow trends-we set them. Our team constantly explores new ideas, techniques, and styles to deliver fresh, 
-                                    innovative designs that make your brand stand out.
-                                </p>
+              </p>
 
-                                <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Original concepts tailored to your brand</span>
-                                </div>
+              <!-- QUOTE -->
+              <div
+                class="mt-8 border-l-4
+                       border-tm-red pl-5"
+              >
 
-                                <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Continuous learning & skill development</span>
-                                </div>
+                <p
+                  class="italic text-gray-600"
+                >
 
-                                <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Experimental approach with proven methods</span>
-                                </div>
-                            </div>
+                  “Great design should be
+                  both beautiful and
+                  purposeful — every pixel
+                  should serve a strategic goal.”
 
-                             <!-- right section -->
-                              <div class="rounded-md p-4 border-l-4 shadow-md border-tm-red">
-                                <!-- title -->
-                                 <h3 class="font-semibold text-lg">Quality</h3>
-                                 <p class="text-sm text-gray-700 mb-2 mt-2">Every project receives full attention to detail. We maintain the highest 
-                                    standards in design execution, from initial concepts to final delivery.
-                                 </p>
+                </p>
 
-                                 <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Pixel-perfect design execution</span>
-                                 </div>
+              </div>
 
-                                 <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Rigorous quality assurance process</span>
-                                 </div>
+            </div>
 
-                                 <div class="flex items-center gap-1">
-                                    <img src="/check(1).png" alt="" width="30" class="icon-red">
-                                    <span class="text-sm text-gray-700 mb-2 mt-2">Professional file preparation & delivery</span>
-                                 </div>
-                              </div>
-                         </div>
-                      </div>
-                </div>
-              </section>
+          </div>
 
-              <!-- CTA -->
-               <section></section>
+        </div>
 
-         <!-- footer -->
-          <Footer />
-    </div>
+      </div>
+
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="py-20">
+
+      <div class="container mx-auto px-6">
+
+        <!-- TITLE -->
+        <div
+          class="text-center mb-16"
+          data-aos="fade-up"
+        >
+
+          <span class="section-badge">
+            Our Philosophy
+          </span>
+
+          <h2 class="section-title mt-5">
+            Design Principles
+            That Drive Results
+          </h2>
+
+          <p
+            class="section-desc
+                   max-w-2xl mx-auto mt-6"
+          >
+
+            Every project is guided by
+            creativity, strategy and a
+            deep understanding of user experience.
+
+          </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div
+          class="grid grid-cols-1
+                 md:grid-cols-2
+                 xl:grid-cols-3 gap-8"
+        >
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+
+            <img
+              src="/clipboard.png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              Strategy-First Design
+            </h3>
+
+            <p class="card-desc">
+              Every design decision supports
+              real business objectives,
+              not aesthetics alone.
+            </p>
+
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+
+            <img
+              src="/electricity.png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              Authentic Storytelling
+            </h3>
+
+            <p class="card-desc">
+              We create visuals that
+              genuinely communicate
+              your brand identity.
+            </p>
+
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+
+            <img
+              src="/people.png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              Collaborative Process
+            </h3>
+
+            <p class="card-desc">
+              We work closely with
+              clients to ensure every
+              project reflects their vision.
+            </p>
+
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+
+            <img
+              src="/download(1).png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              Simplicity With Impact
+            </h3>
+
+            <p class="card-desc">
+              Minimalism combined with
+              bold execution for stronger communication.
+            </p>
+
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+
+            <img
+              src="/padlock.png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              User-Centric Thinking
+            </h3>
+
+            <p class="card-desc">
+              Every visual experience is
+              designed with audience
+              engagement in mind.
+            </p>
+
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="modern-card group"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+
+            <img
+              src="/check-mark(2).png"
+              class="icon-red w-10 mb-5
+                     group-hover:scale-110
+                     transition"
+            >
+
+            <h3 class="card-title">
+              Quality Assurance
+            </h3>
+
+            <p class="card-desc">
+              Pixel-perfect design execution
+              with rigorous quality standards.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20">
+
+      <div class="container mx-auto px-6">
+
+        <div
+          class="relative overflow-hidden
+                 rounded-[40px]
+                 bg-gradient-to-r
+                 from-tm-red
+                 to-red-700
+                 p-12 text-center"
+          data-aos="zoom-in"
+        >
+
+          <!-- DECOR -->
+          <div
+            class="absolute top-0 right-0
+                   w-72 h-72 bg-white/10
+                   rounded-full blur-3xl"
+          />
+
+          <div class="relative z-10">
+
+            <h2
+              class="text-4xl md:text-5xl
+                     font-black text-white"
+            >
+
+              Let&apos;s Build
+              Something Extraordinary
+
+            </h2>
+
+            <p
+              class="text-white/80
+                     max-w-2xl mx-auto
+                     mt-6 text-lg"
+            >
+
+              Whether you&apos;re launching a
+              startup, refreshing a brand,
+              or scaling your business —
+              we&apos;re ready to bring your
+              vision to life.
+
+            </p>
+
+            <button
+              @click="openContactPage"
+              class="mt-10 bg-white
+                     text-tm-red
+                     px-8 py-4 rounded-full
+                     font-semibold
+                     hover:scale-105
+                     transition shadow-2xl"
+            >
+
+              Start Your Project →
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <Footer />
+
+  </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue';
-import Header from '@/components/Header.vue';
-import Marquee from '@/components/Marquee.vue';
+import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Marquee from '@/components/Marquee.vue'
+import router from '@/router';
 
-    export default {
+export default {
 
-        components :{
-            Header,
-            Footer,
-            Marquee
-        },
+  components: {
+    Header,
+    Footer,
+    Marquee
+  },
 
-        data () {}
+  methods: {
+    openPortfolioPage() {
+        router.push('/portfolio')
+    },
+
+    openContactPage() {
+        router.push('/contact-us')
     }
+  }
+}
 </script>
 
 <style scoped>
-    .icon-red {
-        filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(5065%) hue-rotate(355deg) brightness(95%) contrast(110%);
-    }
+
+.glass-card {
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(12px);
+  border-radius: 32px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.modern-card {
+  background: white;
+  padding: 32px;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #111827;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.9;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  color: #d62828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #d62828;
+  margin-bottom: 14px;
+}
+
+.card-desc {
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.icon-red {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(24%)
+    sepia(88%)
+    saturate(5065%)
+    hue-rotate(355deg)
+    brightness(95%)
+    contrast(110%);
+}
+
 </style>

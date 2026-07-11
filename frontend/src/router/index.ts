@@ -24,6 +24,7 @@ import Services from '@/views/admin/Services.vue'
 import Testimonials from '@/views/admin/Testimonials.vue'
 import Messages from '@/views/admin/Messages.vue'
 import Settings from '@/views/admin/Settings.vue'
+import Categories from '@/views/admin/Categories.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -82,6 +83,7 @@ const router = createRouter({
         { path: '', redirect: '/admin/dashboard' },
         { path: 'dashboard', component: Dashboard },
         { path: 'projects', component: Projects },
+        { path: 'categories', component: Categories },
         { path: 'services', component: Services },
         { path: 'testimonials', component: Testimonials },
         { path: 'messages', component: Messages },
